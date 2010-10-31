@@ -1,0 +1,39 @@
+Bootlace
+by Nick Dawson (Neonkoala)
+
+V2.1
+
+Credits: Neonkoala, planetbeing, poorlad, marky, apocolipse and Kevin Elliott.
+
+Status: Master
+
+Requirements
+
+This app requires OpeniBoot 0.1.3
+
+Other requirements:
+* iOS 3.1.2 -> 4.1
+* An internet connection for iDroid install/upgrade features
+* iPhone 3G, 2G or iPod Touch 1G
+* Bravery - my code is hardly the best :P
+
+To Compile
+
+Make sure libcurl files have been copied from device or /usr on OS X to SDK folder. Also include the sys/reboot.h in the ARM root.
+
+  $ ./generate.sh
+  $ make clean && make
+
+To Install To Device
+
+  $ make install
+
+Usage
+
+See http://www.idroidproject.org/wiki/Bootlace
+
+License:
+
+Licensed under MPL-1.1 with a view to move to 2.0 when available.
+
+http://www.mozilla.org/MPL/MPL-1.1.txt

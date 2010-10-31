@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>File</key>
+	<string>kernelcache.release.s5l8900x</string>
+	<key>IV</key>
+	<string>31e711201cf4dcf47be5be2a5b1b87a1</string>
+	<key>Key</key>
+	<string>d0dfac22c03212f8a75fc9c69fe548b6</string>
+	<key>Patch</key>
+	<string>kernelcache.release.patch</string>
+	<key>NORPatch</key>
+	<string>kernelcache.release.nor.patch</string>
+	<key>Path</key>
+	<string>/System/Library/Caches/com.apple.kernelcaches/kernelcache.s5l8900x</string>
+</dict>
+</plist>

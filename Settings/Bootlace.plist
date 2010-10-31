@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>entry</key>
+	<dict>
+		<key>cell</key>
+		<string>PSLinkCell</string>
+		<key>icon</key>
+		<string>/Applications/Bootlace.app/SettingsIcon.png</string>
+		<key>label</key>
+		<string>Bootlace</string>
+	</dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>be.dawson.Bootlace</string>
+			<key>key</key>
+			<string>debugMode</string>
+			<key>label</key>
+			<string>Debug</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>Bootlace</string>
+</dict>
+</plist>

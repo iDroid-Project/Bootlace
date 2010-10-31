@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FirmwarePatches</key>
+	<dict>
+		<key>iBoot</key>
+		<dict>
+			<key>File</key>
+			<string>iBoot.n82ap.RELEASE.img3</string>
+			<key>IV</key>
+			<string>32bbdf3d85a713952503c2bbeb4d69a5</string>
+			<key>Key</key>
+			<string>3470f3841b87b161517588c21534b03b</string>
+			<key>Patch</key>
+			<string>iBoot.n82ap.RELEASE.patch</string>
+		</dict>
+		<key>LLB</key>
+		<dict>
+			<key>File</key>
+			<string>LLB.n82ap.RELEASE.img3</string>
+			<key>Patch</key>
+			<string>LLB.n82ap.RELEASE.patch</string>
+		</dict>
+	</dict>
+	<key>Name</key>
+	<string>iPhone1,2_4.0_8A293</string>
+</dict>
+</plist>

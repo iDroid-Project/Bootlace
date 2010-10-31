@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>File</key>
+	<string>kernelcache.release.n82</string>
+	<key>IV</key>
+	<string>7238dcea75bf213eff209825a03add51</string>
+	<key>Key</key>
+	<string>0295d4ef87b9db687b44f54c8585d2b6</string>
+	<key>Patch</key>
+	<string>kernelcache.release.patch</string>
+	<key>NORPatch</key>
+	<string>kernelcache.release.nor.patch</string>
+	<key>Path</key>
+	<string>/System/Library/Caches/com.apple.kernelcaches/kernelcache</string>
+</dict>
+</plist>

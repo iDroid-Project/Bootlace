@@ -1,0 +1,2 @@
+#!/bin/bash
+exec /Applications/Bootlace.app/Bootlace &> /var/tmp/Bootlace.log
