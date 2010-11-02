@@ -1,6 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-
 <head>
 <meta content="yes" name="apple-mobile-web-app-capable" />
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
@@ -12,130 +11,147 @@
 body {
 	background-color:transparent;
 	font-family:Helvetica;
+	font-size:12px;
 }
 div.header {
 	text-align:center;
 }
 div.thanks {
-    padding-top:7px;
-    text-align:left;
-    }
+	padding-top:7px;
+	text-align:left;
+}
 div.thanks ul {
-    font-size:14px;
-    margin:5px 0;
-    padding:0 0 0 20px;
-    }
+	font-size:14px;
+	margin:5px 0;
+	padding:0 0 0 20px;
+}
 div#otherthanks {
-    padding-top:12px;
-    }
-div.licences {
-    padding-top:12px;
-    }
-div.licences ul {
-    padding:0 0 0 20px;
-    }
-div.licences ul li ul {
-    font-size:14px;
-    list-style-type:square;
-    padding:5px 0 5px 15px;
-    }
+	padding-top:12px;
+}
 h1 {
-    font-size:22px;
-    font-weight:bold;
-    margin:0;
-    }
+	font-size:22px;
+	font-weight:bold;
+	margin:0;
+}
 h2 {
-    font-size:16px;
-    font-weight:bold;
-    margin:0;
-    }
+	font-size:16px;
+	font-weight:bold;
+	margin:10px 0;
+}
 h3 {
-    font-size:16px;
-    font-weight:normal;
-    margin:0;
-    }
+	font-size:16px;
+	font-weight:normal;
+	margin:0;
+}
 h4 {
-    font-size:14px;
-    font-weight:bold;
-    margin:0;
-    text-align:center;
-    }
+	font-size:14px;
+	font-weight:bold;
+	margin:0;
+	text-align:center;
+}
 h5 {
-    font-size:12px;
-    font-weight:normal;
-    color:#777;
-    margin:2px 0;
-    }
+	font-size:12px;
+	font-weight:normal;
+	color:#777;
+	margin:2px 0;
+}
+
+#licences div ul {
+	margin-left:5px;
+	padding:0;
+	list-style: square;
+}
+
+a:link, a:visited, a:active {
+	text-decoration:none;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
 </style>
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script>
+<script type="text/javascript">
+$().ready(function() {
+	$('#licences').accordion({ collapsible: true });
+});
+</script>
 </head>
 
 <body>
-<div class="header">
-    <img src="bootlace.png" alt="" />
-    <h1>Bootlace v2.1</h1>
-    <h3>by Nick Dawson</h3>
-    <h5>nick@dawson.be</h5>
+<div class="header"> <img src="bootlace.png" alt="" />
+  <h1>Bootlace v2.1</h1>
+  <h3>by Nick Dawson</h3>
+  <h5>nick@dawson.be</h5>
 </div>
-
 <div class="thanks">
-    <h2>With thanks to:</h2>
+  <h2>With thanks to:</h2>
+  <ul>
+    <li><b>Patrick Wildt (Bluerise)</b> and <b>CPICH</b> - for the kernel patches to enable flashing NOR from userland.</li>
+    <li><b>Kevin Elliott</b> - for contributions to the Bootlace code.</li>
+    <li><b>Nick Pack (nickp666)</b> - for Bootlace graphics and contributions to code.</li>
+    <li><b>Marky</b> - for Bootlace and iDroid graphics.</li>
+    <li><b>poorlad</b> - for OpeniBoot graphics.</li>
+  </ul>
+  <div id="otherthanks">
+    <h4>
+    Thanks also to all those involved in the iDroid and iPhoneLinux projects.
+    </h3>
+  </div>
+</div>
+<h2>Licences</h2>
+<div id="licences">
+  <h3><a href="#">Bootlace</a></h3>
+  <div>
     <ul>
-        <li><b>Patrick Wildt (Bluerise)</b> and <b>CPICH</b> - for the kernel patches to enable flashing NOR from userland.</li>
-        <li><b>Kevin Elliott</b> - for contributions to the Bootlace code.</li>
-        <li><b>Nick Pack (nickp666)</b> - for Bootlace graphics and contributions to code.</li>
-        <li><b>Marky</b> - for Bootlace and iDroid graphics.</li>
-        <li><b>poorlad</b> - for OpeniBoot graphics.</li>
+      <li>Mozilla Public Licence (MPL) 1.1</li>
+      <li><a href="http://www.mozilla.org/MPL/MPL-1.1.html">http://www.mozilla.org/MPL/MPL-1.1.html</a></li>
+      <li>Homepage: <a href="http://www.idroidproject.org/">iDroid Project</a></li>
     </ul>
-    <div id="otherthanks"><h4>Thanks also to all those involved in the iDroid and iPhoneLinux projects.</h3></div>
-</div>
-
-<div class="licences">
-    <h2>Licences</h2>
+  </div>
+  <h3><a href="#">libcurl</a></h3>
+  <div>
     <ul>
-        <li><b>Bootlace</b>
-        <ul>
-            <li>Mozilla Public Licence (MPL) 1.1</li>
-            <li><a href="http://www.mozilla.org/MPL/MPL-1.1.html">http://www.mozilla.org/MPL/MPL-1.1.html</a></li>
-            <li>Homepage: <a href="http://www.idroidproject.org/">iDroid Project</a></li>
-        </ul>
-        </li>
-        <li><b>libcurl</b>
-        <ul>
-            <li>MIT/X Derivative</li>
-            <li><a href="http://curl.haxx.se/docs/copyright.html">http://curl.haxx.se/docs/copyright.html</a></li>
-            <li>Homepage: <a href="http://curl.haxx.se/">cURL and libcurl</a></li>
-        </ul>
-        </li>
-        <li><b>libbzip2</b>
-        <ul>
-            <li>Original BSD Licence</li>
-            <li><a href="http://g.dawson.be/bzip2">http://g.dawson.be/bzip2</a></li>
-            <li>Homepage: <a href="http://www.bzip.org/">bzip2</a></li>
-        </ul>
-        <li><b>partial-zip</b>
-        <ul>
-            <li>GNU Public Licence (GPL) V3</li>
-            <li><a href="http://www.gnu.org/licenses/gpl.html">http://www.gnu.org/licenses/gpl.html</a></li>
-            <li>Homepage: <a href="http://github.com/planetbeing/partial-zip">GitHub - partial-zip</a></li>
-        </ul>
-        </li>
-        <li><b>zlib</b>
-        <ul>
-            <li>zlib Licence</li>
-            <li><a href="http://www.zlib.net/zlib_license.html">http://www.zlib.net/zlib_license.html</a></li>
-            <li>Homepage: <a href="http://www.zlib.net/">zlib</a></li>
-        </ul>
-        </li>
-        <li><b>libarchive</b>
-        <ul>
-            <li>New BSD Licence</li>
-            <li><a href="http://www.opensource.org/licenses/bsd-license.php">http://www.opensource.org/licenses/bsd-license.php</a></li>
-            <li>Homepage: <a href="http://code.google.com/p/libarchive/">Google Code - libarchive</a></li>
-        </ul>
-        </li>
-    </ul>    
+      <li>MIT/X Derivative</li>
+      <li><a href="http://curl.haxx.se/docs/copyright.html">http://curl.haxx.se/docs/copyright.html</a></li>
+      <li>Homepage: <a href="http://curl.haxx.se/">cURL and libcurl</a></li>
+    </ul>
+  </div>
+  <h3><a href="#">libbzip2</a></h3>
+  <div>
+    <ul>
+      <li>Original BSD Licence</li>
+      <li><a href="http://g.dawson.be/bzip2">http://g.dawson.be/bzip2</a></li>
+      <li>Homepage: <a href="http://www.bzip.org/">bzip2</a></li>
+    </ul>
+  </div>
+  <h3><a href="#">partial-zip</a></h3>
+  <div>
+    <ul>
+      <li>GNU Public Licence (GPL) V3</li>
+      <li><a href="http://www.gnu.org/licenses/gpl.html">http://www.gnu.org/licenses/gpl.html</a></li>
+      <li>Homepage: <a href="http://github.com/planetbeing/partial-zip">GitHub - partial-zip</a></li>
+    </ul>
+  </div>
+  <h3><a href="#">zlib</a></h3>
+  <div>
+    <ul>
+      <li>zlib Licence</li>
+      <li><a href="http://www.zlib.net/zlib_license.html">http://www.zlib.net/zlib_license.html</a></li>
+      <li>Homepage: <a href="http://www.zlib.net/">zlib</a></li>
+    </ul>
+  </div>
+  <h3><a href="#">libarchive</a></h3>
+  <div>
+    <ul>
+      <li>New BSD Licence</li>
+      <li><a href="http://www.opensource.org/licenses/bsd-license.php">http://www.opensource.org/licenses/bsd-license.php</a></li>
+      <li>Homepage: <a href="http://code.google.com/p/libarchive/">Google Code - libarchive</a></li>
+    </ul>
+  </div>
 </div>
-
 </body>
-
 </html>
