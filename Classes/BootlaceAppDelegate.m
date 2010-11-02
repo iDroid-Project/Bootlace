@@ -33,9 +33,8 @@
 	}
 	
 	//Read settings
-	[[NSUserDefaults standardUserDefaults] registerDefaults:[NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithBool:YES],@"firstLaunch",[NSNumber numberWithBool:NO],@"secondLaunch",nil]];
-	sharedData.firstLaunch = [[NSUserDefaults standardUserDefaults] boolForKey:@"firstLaunch"];
-	sharedData.secondLaunch = [[NSUserDefaults standardUserDefaults] boolForKey:@"secondLaunch"];
+	sharedData.firstLaunch = [[NSUserDefaults standardUserDefaults] boolForKey:@"hasRunOnce"];
+	sharedData.secondLaunch = [[NSUserDefaults standardUserDefaults] boolForKey:@"hasRunTwice"];
 	sharedData.debugMode = [[NSUserDefaults standardUserDefaults] boolForKey:@"debugMode"];
 	
 	if(sharedData.debugMode) {
@@ -67,7 +66,7 @@
     // Add the tab bar controller's current view as a subview of the window
     [window addSubview:tabBarController.view];
 	
-	if(sharedData.firstLaunch) {
+	if(!sharedData.firstLaunch) {
 		FirstLaunchViewController *fullscreenController = [[FirstLaunchViewController alloc] init];
 		[tabBarController presentModalViewController:fullscreenController animated:NO];
 	}

@@ -14,7 +14,10 @@
 		<key>KernelMD5</key>
 		<dict>
 			<key>3.1.2</key>
-			<array/>
+			<array>
+				<string>0b0b76bb29c8ad395bc8e4b03a2c1205</string>
+				<string>e9a78c8aedf5752c046b0b1c82228408</string>
+			</array>
 			<key>3.1.3</key>
 			<array>
 				<string>422e010a3a739f3faed935bdd34d5283</string>
@@ -53,7 +56,7 @@
 			<array>
 				<string>0b0b76bb29c8ad395bc8e4b03a2c1205</string>
 				<string>e9a78c8aedf5752c046b0b1c82228408</string>
-				<string>black</string>
+				<string>89b8e3a9d374a63e371483b45083acc7</string>
 			</array>
 			<key>3.1.3</key>
 			<array>
@@ -96,6 +99,38 @@
 			<string>iPhone1,2_4.0_8A293.bundle</string>
 			<key>4.1</key>
 			<string>iPhone1,2_4.1_8B117.bundle</string>
+		</dict>
+	</dict>
+	<key>iPod1,1</key>
+	<dict>
+		<key>IPSWURLs</key>
+		<dict>
+			<key>3.1.2</key>
+			<string>http://appldnld.apple.com.edgesuite.net/content.info.apple.com/iPhone/061-7268.20091008.32pNe/iPhone1,1_3.1.2_7D11_Restore.ipsw</string>
+			<key>3.1.3</key>
+			<string>http://appldnld.apple.com.edgesuite.net/content.info.apple.com/iPhone/061-7481.20100202.4orot/iPhone1,1_3.1.3_7E18_Restore.ipsw</string>
+		</dict>
+		<key>KernelMD5</key>
+		<dict>
+			<key>3.1.2</key>
+			<array>
+				<string>0b0b76bb29c8ad395bc8e4b03a2c1205</string>
+				<string>e9a78c8aedf5752c046b0b1c82228408</string>
+				<string>89b8e3a9d374a63e371483b45083acc7</string>
+			</array>
+			<key>3.1.3</key>
+			<array>
+				<string>422e010a3a739f3faed935bdd34d5283</string>
+				<string>e9a78c8aedf5752c046b0b1c82228408</string>
+				<string>blackra1n</string>
+			</array>
+		</dict>
+		<key>KernelPatches</key>
+		<dict>
+			<key>3.1.2</key>
+			<string>iPhone1,1_3.1.2_7D11.bundle</string>
+			<key>3.1.3</key>
+			<string>iPhone1,1_3.1.3_7E18.bundle</string>
 		</dict>
 	</dict>
 </dict>

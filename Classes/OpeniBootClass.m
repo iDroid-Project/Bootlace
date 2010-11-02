@@ -832,6 +832,10 @@ char endianness = 1;
 		if([kernelMD5 isEqualToString:[[kernelCompatibleMD5s objectForKey:sharedData.systemVersion] objectAtIndex:2]]) {
 			jbType = 3;
 			DLog(@"Device compatible: %@ on %@ jailbroken using blackra1n.", sharedData.platform, sharedData.systemVersion);
+		} else {
+			DLog(@"No MD5 matches found, aborting...");
+			sharedData.kernelPatchFail = -3;
+			return;
 		}
 	} else {
 		DLog(@"No MD5 matches found, aborting...");
@@ -871,8 +875,6 @@ char endianness = 1;
 		sharedData.kernelPatchFail = -6;
 		return;
 	}
-	
-	NSLog(@"wd: %@ kcp: %@", sharedData.workingDirectory, sharedData.kernelCachePath);
 	
 	sharedData.kernelCachePath = [sharedData.workingDirectory stringByAppendingPathComponent:sharedData.kernelCachePath];
 	

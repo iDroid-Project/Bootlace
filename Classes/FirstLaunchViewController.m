@@ -31,10 +31,8 @@
 		[patchingProgress hide];
 		
 		if(sharedData.kernelPatchFail==0) {	
-			sharedData.firstLaunch = NO;
-			
-			[[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"firstLaunch"];
-			[[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"secondLaunch"];
+			[[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"hasRunOnce"];
+			[[NSUserDefaults standardUserDefaults] synchronize];
 			
 			UIAlertView *rebootPrompt = [[UIAlertView alloc] initWithTitle:@"Reboot Required" message:@"Kernel successfully patched.\r\nYour device must be rebooted." delegate:self cancelButtonTitle:nil otherButtonTitles:@"Reboot",nil];
 			[rebootPrompt setTag:1];
@@ -137,6 +135,14 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+	
+	commonData* sharedData = [commonData sharedData];
+	commonFunctions *commonInstance = [[commonFunctions alloc] init];
+	
+	if(![sharedData.platform isEqualToString:@"iPhone1,1"] && ![sharedData.platform isEqualToString:@"iPhone1,2"] && ![sharedData.platform isEqualToString:@"iPod1,1"]) {
+		DLog(@"Failed platform check: %@", sharedData.platform);
+		[commonInstance sendTerminalError:@"Bootlace is not compatible with this device.\r\nAborting..."];
+	}
 	
 	opibInstance = [[OpeniBootClass alloc] init];
 	
