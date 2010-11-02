@@ -24,16 +24,20 @@
 }
 
 - (void)toggleAirplaneMode {
-	void *libHandle = dlopen("/System/Library/Frameworks/CoreTelephony.framework/CoreTelephony", RTLD_LAZY);
-    int (*AirplaneMode)() = dlsym(libHandle, "CTPowerGetAirplaneMode");
-    int (*enable)(int mode) = dlsym(libHandle, "CTPowerSetAirplaneMode");
+	commonData* sharedData = [commonData sharedData];
 	
-	int status = AirplaneMode();
+	if(![sharedData.systemVersion isEqualToString:@"3.1.3"] && ![sharedData.systemVersion isEqualToString:@"3.1.2"]) {
+		void *libHandle = dlopen("/System/Library/Frameworks/CoreTelephony.framework/CoreTelephony", RTLD_LAZY);
+	    int (*AirplaneMode)() = dlsym(libHandle, "CTPowerGetAirplaneMode");
+		int (*enable)(int mode) = dlsym(libHandle, "CTPowerSetAirplaneMode");
 	
-	if(status) {
-		enable(0);
-	} else {
-		enable(1);
+		int status = AirplaneMode();
+	
+		if(status) {
+			enable(0);
+		} else {
+			enable(1);
+		}
 	}
 }
 

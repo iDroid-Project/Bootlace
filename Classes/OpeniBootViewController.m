@@ -143,8 +143,10 @@
 		return;
 	}
 	
+	//Let's check we have the correct Bootlace version
+	
 	//Ok that's good, now lets see if kernel matches our whitelist of MD5 hashes from various jailbreaks
-	NSString *kernelMD5 = [commonInstance fileMD5:@"/System/Library/Caches/com.apple.kernelcaches/kernelcache"];
+	NSString *kernelMD5 = [commonInstance fileMD5:[sharedData.opibUpdateKernelPaths objectForKey:sharedData.systemVersion]];
 	
 	items = [[sharedData.opibUpdateVerifyMD5 objectForKey:sharedData.systemVersion] count];
 	for(i=0; i<items; i++) {

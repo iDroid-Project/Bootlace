@@ -185,6 +185,7 @@ char endianness = 1;
 	sharedData.opibUpdateKernelMD5 = [deviceDict objectForKey:@"KernelMD5"];
 	sharedData.opibUpdateVerifyMD5 = [deviceDict objectForKey:@"VerifyMD5"];
 	sharedData.opibUpdateManifest = [deviceDict objectForKey:@"Manifest"];
+	sharedData.opibUpdateKernelPaths = [deviceDict objectForKey:@"KernelPath"];
 	
 	return 0;
 }
@@ -305,7 +306,7 @@ char endianness = 1;
 		DLog(@"Haha, thought you could trick me with an empty Manifest? Not this time bitch.");
 		return -1;
 	}
-	
+	NSLog(@"CP: 1");
 	k_result = IOMasterPort(MACH_PORT_NULL, &masterPort);
 	if (k_result) {
 		DLog(@"IOMasterPort failed: 0x%X\n", k_result);
@@ -504,7 +505,8 @@ char endianness = 1;
 	bsPatchInstance = [[BSPatch alloc] init];
 	commonData* sharedData = [commonData sharedData];
 	
-	//Let's do LLB first
+	DLog(@"Patching LLB first...");
+	
 	llbPath = [sharedData.workingDirectory stringByAppendingPathComponent:[LLBPatches objectForKey:@"File"]];
 	NSString *llbPatchPath = [sharedData.workingDirectory stringByAppendingPathComponent:[LLBPatches objectForKey:@"Patch"]];
 	status = [self opibDecryptIMG3:llbPath to:[llbPath stringByAppendingPathExtension:@"decrypted"] key:nil iv:nil type:YES];
@@ -537,6 +539,8 @@ char endianness = 1;
 	}
 	
 	[self opibUpdateProgress:0.375];
+	
+	DLog(@"Patching iBoot...");
 	
 	iBootPath = [sharedData.workingDirectory stringByAppendingPathComponent:[iBootPatches objectForKey:@"File"]];
 	NSString *iBootPatchPath = [sharedData.workingDirectory stringByAppendingPathComponent:[iBootPatches objectForKey:@"Patch"]];
@@ -583,6 +587,8 @@ char endianness = 1;
 	}
 	
 	[self opibUpdateProgress:0.875];
+	
+	DLog(@"Patching done.");
 	
 	return 0;
 }
@@ -827,16 +833,10 @@ char endianness = 1;
 		//Redsn0w
 		jbType = 2;
 		DLog(@"Device compatible: %@ on %@ jailbroken using redsn0w.", sharedData.platform, sharedData.systemVersion);
-	} else if([sharedData.systemVersion isEqualToString:@"3.1.2"] || [sharedData.systemVersion isEqualToString:@"3.1.3"]) {
+	} else if([sharedData.systemVersion isEqualToString:@"3.1.2"] && [kernelMD5 isEqualToString:[[kernelCompatibleMD5s objectForKey:sharedData.systemVersion] objectAtIndex:2]]) {
 		//Blackra1n check
-		if([kernelMD5 isEqualToString:[[kernelCompatibleMD5s objectForKey:sharedData.systemVersion] objectAtIndex:2]]) {
-			jbType = 3;
-			DLog(@"Device compatible: %@ on %@ jailbroken using blackra1n.", sharedData.platform, sharedData.systemVersion);
-		} else {
-			DLog(@"No MD5 matches found, aborting...");
-			sharedData.kernelPatchFail = -3;
-			return;
-		}
+		jbType = 3;
+		DLog(@"Device compatible: %@ on %@ jailbroken using blackra1n.", sharedData.platform, sharedData.systemVersion);
 	} else {
 		DLog(@"No MD5 matches found, aborting...");
 		sharedData.kernelPatchFail = -3;

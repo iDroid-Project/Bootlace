@@ -48,6 +48,7 @@
 	NSDictionary *opibUpdateKernelMD5;
 	NSDictionary *opibUpdateVerifyMD5;
 	NSArray *opibUpdateManifest;
+	NSDictionary *opibUpdateKernelPaths;
 	
 	
 	int kernelPatchStage;
@@ -150,6 +151,7 @@
 @property (nonatomic, retain) NSDictionary *opibUpdateKernelMD5;
 @property (nonatomic, retain) NSDictionary *opibUpdateVerifyMD5;
 @property (nonatomic, retain) NSArray *opibUpdateManifest;
+@property (nonatomic, retain) NSDictionary *opibUpdateKernelPaths;
 
 
 @property (nonatomic, assign) int kernelPatchStage;
