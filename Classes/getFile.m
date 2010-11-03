@@ -91,7 +91,7 @@
 	dataGot += [data length];
 	progress = (float) dataGot / dataTotal;
 	
-	//[installInstance updateProgress:[NSNumber numberWithFloat:progress] nextStage:NO];
+	[installInstance updateProgress:[NSNumber numberWithFloat:progress] nextStage:NO];
 }
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {

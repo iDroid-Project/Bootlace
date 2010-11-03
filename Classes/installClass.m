@@ -262,6 +262,7 @@
 
 - (void)idroidInstall {
 	commonData* sharedData = [commonData sharedData];
+	commonInstance = [[commonFunctions alloc] init];
 	extractionInstance = [[extractionClass alloc] init];
 	int success;
 	

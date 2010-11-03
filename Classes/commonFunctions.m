@@ -53,7 +53,7 @@
 
 - (NSString *)fileMD5:(NSString *)path {
 	installInstance = [[installClass alloc] init];
-	
+	int i = 0;
 	int read = 0;	
 	NSDictionary *attr = [[NSFileManager defaultManager] attributesOfItemAtPath:path error:nil];
 	int fileSize = [attr fileSize];

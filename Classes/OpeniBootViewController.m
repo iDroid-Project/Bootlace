@@ -144,6 +144,11 @@
 	}
 	
 	//Let's check we have the correct Bootlace version
+	if([sharedData.opibUpdateBootlaceRequired compare:sharedData.bootlaceVersion options:NSNumericSearch] == NSOrderedDescending) {
+		DLog(@"Bootlace version %@ required. Using: %@", sharedData.opibUpdateBootlaceRequired, sharedData.bootlaceVersion);
+		[commonInstance sendError:[NSString stringWithFormat:@"This version of Bootlace needs to be updated to %@ before installing OpeniBoot.", sharedData.opibUpdateBootlaceRequired]];
+		return;
+	}
 	
 	//Ok that's good, now lets see if kernel matches our whitelist of MD5 hashes from various jailbreaks
 	NSString *kernelMD5 = [commonInstance fileMD5:[sharedData.opibUpdateKernelPaths objectForKey:sharedData.systemVersion]];
