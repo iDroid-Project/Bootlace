@@ -41,7 +41,7 @@
 	commonInstance = [[commonFunctions alloc] init];
 	
 	UIAlertView *installPrompt;
-	NSString *message = @"Bootlace is about to install OpeniBoot.\r\n\r\nThis involves flashing important parts your device and must not be interrupted or your device will require a restore.\r\n\r\nDo not close the app during any part of the install.";
+	NSString *message = @"Bootlace is about to install OpeniBoot.\r\n\r\nThis involves flashing important parts of your device and must not be interrupted or your device will require a restore.\r\n\r\nDo not close the app during any part of the install.";
 	if(![commonInstance checkMains]) {
 		message = [message stringByAppendingString:@"\r\nConnect your device to the mains before continuing."];
 	}

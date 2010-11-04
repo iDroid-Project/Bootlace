@@ -269,7 +269,7 @@
 	sharedData.updateFail = 0;
 	sharedData.updateStage = 0;
 	
-	[UIApplication sharedApplication].idleTimerDisabled = YES; //Stop autlock
+	[UIApplication sharedApplication].idleTimerDisabled = YES; //Stop autolock
 	
 	[self updateProgress:[NSNumber numberWithInt:0] nextStage:YES];
 	

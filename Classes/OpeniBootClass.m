@@ -170,7 +170,7 @@ char endianness = 1;
 	commonData* sharedData = [commonData sharedData];
 	DLog(@"Parsing OpeniBoot update plist");
 	
-	if(deviceDict == nil) {
+	if([deviceDict count]==0) {
 		DLog(@"OpeniBoot plist invalid");
 		return -1;
 	}
@@ -627,8 +627,8 @@ char endianness = 1;
 	}
 	sharedData.opibDict = [NSMutableDictionary dictionaryWithContentsOfURL:opibUpdatePlistURL];
 	
-	if(sharedData.opibDict == nil) {
-		sharedData.updateCanBeInstalled = -1;
+	if([sharedData.opibDict count] == 0) {
+		sharedData.opibCanBeInstalled = -1;
 		DLog(@"Could not retrieve openiboot update plist - server problem?");
 		return;
 	}
@@ -838,8 +838,8 @@ char endianness = 1;
 		jbType = 3;
 		DLog(@"Device compatible: %@ on %@ jailbroken using blackra1n.", sharedData.platform, sharedData.systemVersion);
 	} else if([sharedData.systemVersion isEqualToString:@"4.1"] && [kernelMD5 isEqualToString:[[kernelCompatibleMD5s objectForKey:sharedData.systemVersion] objectAtIndex:2]]) {
-		//Redsn0w check #2 as dev team decided to do a second lot of patches for 4.1 redsn0w.. wtf man?
-		jbType = 2;
+		//Redsn0w check #2 as dev team decided to do a second lot of patches for 4.1 redsn0w.. wtf man? Turns out 0.9.6b2 is rather like pwnagetool, needs keys
+		jbType = 1;
 		DLog(@"Device compatible: %@ on %@ jailbroken using redsn0w 0.9.6b2+.", sharedData.platform, sharedData.systemVersion);
 	} else {
 		DLog(@"No MD5 matches found, aborting...");
@@ -868,6 +868,7 @@ char endianness = 1;
 		return;
 	}
 	
+	DLog(@"Found it, now grabbing it.");
 	data = PartialZipGetFile(info, file);
 	int dataLen = file->size; 
 	
