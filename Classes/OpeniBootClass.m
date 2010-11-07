@@ -738,7 +738,9 @@ char endianness = 1;
 	[[NSFileManager defaultManager] removeItemAtPath:[llbPath stringByAppendingPathExtension:@"decrypted.patched"] error:nil];
 	
 	//Remove raw openiboot
-	[[NSFileManager defaultManager] removeItemAtPath:openibootPath error:nil];
+	if([openibootPath length] > 0) {
+		[[NSFileManager defaultManager] removeItemAtPath:openibootPath error:nil];
+	}	
 	
 	//Remove nor files
 	items = [sharedData.opibUpdateManifest count];
