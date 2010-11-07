@@ -19,6 +19,7 @@
 	opibInstall.enabled = NO;
 	opibVersionLabel.hidden = YES;
 	opibReleaseDateLabel.hidden = YES;
+	opibConfigure.hidden = YES;
 	
 	cfuSpinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
 	[cfuSpinner setCenter:CGPointMake(160, 140)];
