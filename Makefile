@@ -4,7 +4,7 @@ PROJECTNAME=Bootlace
 APPFOLDER=$(PROJECTNAME).app
 INSTALLFOLDER=$(PROJECTNAME).app
 
-IPHONE_IP=192.168.0.11
+IPHONE_IP=10.0.0.5
 
 SDKVER=3.1.2
 SDKROOT=/SDK/Platforms/iPhoneOS.platform
@@ -47,6 +47,7 @@ LDFLAGS += build/Release-iphoneos/libpartialzip.a
 LDFLAGS += build/Release-iphoneos/libbz2.a
 LDFLAGS += Libraries/arm/libarchive.a
 
+CFLAGS += -IBZip2
 CFLAGS += -I"$(SDKROOT)/Developer/usr/lib/gcc/arm-apple-darwin9/4.2.1/include/"
 CFLAGS += -I"$(SDK)/usr/include"
 CFLAGS += -IHeaders
