@@ -179,13 +179,7 @@ char endianness = 1;
 	sharedData.opibUpdateReleaseDate = [deviceDict objectForKey:@"ReleaseDate"];
 	sharedData.opibUpdateURL = [deviceDict objectForKey:@"URL"];
 	sharedData.opibUpdateVersion = [deviceDict objectForKey:@"Version"];
-	sharedData.opibUpdateFirmwarePath = [deviceDict objectForKey:@"FirmwarePath"];
 	sharedData.opibUpdateCompatibleFirmware = [deviceDict objectForKey:@"CompatibleFirmware"];
-	sharedData.opibUpdateIPSWURLs = [deviceDict objectForKey:@"IPSWURLs"];
-	sharedData.opibUpdateKernelMD5 = [deviceDict objectForKey:@"KernelMD5"];
-	sharedData.opibUpdateVerifyMD5 = [deviceDict objectForKey:@"VerifyMD5"];
-	sharedData.opibUpdateManifest = [deviceDict objectForKey:@"Manifest"];
-	sharedData.opibUpdateKernelPaths = [deviceDict objectForKey:@"KernelPath"];
 	
 	return 0;
 }
@@ -196,12 +190,12 @@ char endianness = 1;
 	unsigned char* data;
 	commonData* sharedData = [commonData sharedData];
 	
-	DLog(@"Getting NOR files from Apple servers. IPSW: %@", [sharedData.opibUpdateIPSWURLs objectForKey:sharedData.systemVersion]);
+	DLog(@"Getting NOR files from Apple servers. IPSW: %@", sharedData.opibUpdateIPSWURL);
 	
-	ZipInfo* info = PartialZipInit([[sharedData.opibUpdateIPSWURLs objectForKey:sharedData.systemVersion] cStringUsingEncoding:NSUTF8StringEncoding]);
+	ZipInfo* info = PartialZipInit([sharedData.opibUpdateIPSWURL cStringUsingEncoding:NSUTF8StringEncoding]);
 	if(!info)
 	{
-		DLog(@"Cannot retrieve IPSW from: %@", [sharedData.opibUpdateIPSWURLs objectForKey:sharedData.systemVersion]);
+		DLog(@"Cannot retrieve IPSW from: %@", sharedData.opibUpdateIPSWURL);
 		return -1;
 	}
 	
@@ -246,6 +240,75 @@ char endianness = 1;
 	}
 	
 	PartialZipRelease(info);
+	
+	return 0;
+}
+
+- (int)opibGetFirmwareBundle {
+	commonData* sharedData = [commonData sharedData];
+	NSError *error;
+	int statusCode;
+	
+	NSString *bundleURL = [sharedData.opibUpdateCompatibleFirmware objectForKey:sharedData.systemVersion];
+	
+	DLog(@"Grabbing firmware bundle %@", bundleURL);
+	
+	NSDictionary *bundleInfo = [NSDictionary dictionaryWithContentsOfURL:[NSURL URLWithString:[bundleURL stringByAppendingPathComponent:@"Info.plist"]]];
+	if([bundleInfo count] < 1) {
+		return -1;
+	}
+	
+	sharedData.opibUpdateFirmwarePath = [bundleInfo objectForKey:@"FirmwarePath"];
+	sharedData.opibUpdateIPSWURL = [bundleInfo objectForKey:@"URL"];
+	sharedData.opibUpdateVerifyMD5 = [bundleInfo objectForKey:@"VerifyMD5"];
+	sharedData.opibUpdateManifest = [bundleInfo objectForKey:@"Manifest"];
+	sharedData.opibUpdateKernelPath = [bundleInfo objectForKey:@"KernelPath"];
+	
+	NSDictionary *firmwarePatches = [bundleInfo objectForKey:@"FirmwarePatches"];
+	
+	LLBPatches = [firmwarePatches objectForKey:@"LLB"];
+	iBootPatches = [firmwarePatches objectForKey:@"iBoot"];
+	
+	//Get files
+	NSString *urlString = [NSString stringWithFormat:@"%@/%@", bundleURL, [LLBPatches objectForKey:@"Patch"]];
+	NSURL *URL = [NSURL URLWithString:urlString];
+	
+	ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:URL];
+	[request setDownloadDestinationPath:[sharedData.workingDirectory stringByAppendingPathComponent:[LLBPatches objectForKey:@"Patch"]]];
+	[request startSynchronous];
+	
+	error = [request error];
+	statusCode = [request responseStatusCode];
+	
+	if(statusCode >= 400) {
+		DLog(@"HTTP bad response: %d", statusCode);
+		return -2;
+	} else if(error) {
+		DLog(@"Grabbing LLB Patch failed. NSError: %@", [error localizedDescription]);
+		return -2;
+	}
+	
+	[self opibUpdateProgress:0.875];
+	
+	urlString = [NSString stringWithFormat:@"%@/%@", bundleURL, [iBootPatches objectForKey:@"Patch"]];
+	URL = [NSURL URLWithString:urlString];
+	
+	request = [ASIHTTPRequest requestWithURL:URL];
+	[request setDownloadDestinationPath:[sharedData.workingDirectory stringByAppendingPathComponent:[iBootPatches objectForKey:@"Patch"]]];
+	[request startSynchronous];
+	
+	error = [request error];
+	statusCode = [request responseStatusCode];
+	
+	if(statusCode >= 400) {
+		DLog(@"HTTP bad response: %d", statusCode);
+		return -3;
+	} else if(error) {
+		DLog(@"Grabbing LLB Patch failed. NSError: %@", [error localizedDescription]);
+		return -3;
+	}
+	
+	[self opibUpdateProgress:0.9375];
 	
 	return 0;
 }
@@ -814,7 +877,7 @@ char endianness = 1;
 	
 	sharedData.kernelPatchFail = 0;
 	
-	[UIApplication sharedApplication].idleTimerDisabled = YES; //Stop autlock
+	[UIApplication sharedApplication].idleTimerDisabled = YES; //Stop autolock
 	
 	//Pre-flight checks
 	DLog(@"Checking device compatibility...");
@@ -830,8 +893,7 @@ char endianness = 1;
 	}
 	
 	NSDictionary *kernelPatchBundles = [platformDict objectForKey:@"KernelPatches"];
-	NSDictionary *kernelCompatibleMD5s = [platformDict objectForKey:@"KernelMD5"];
-	
+		
 	NSString *bundleName = [kernelPatchBundles objectForKey:sharedData.systemVersion];
 	
 	if([bundleName length] == 0) {
@@ -844,22 +906,23 @@ char endianness = 1;
 	bundlePath = [bundlePath stringByAppendingPathComponent:bundleName];
 	
 	NSDictionary *kernelPatchBundleDict = [NSDictionary dictionaryWithContentsOfFile:[bundlePath stringByAppendingPathComponent:@"Info.plist"]];
+	NSArray *kernelCompatibleMD5s = [kernelPatchBundleDict objectForKey:@"KernelMD5"];
 	
 	NSString *kernelMD5 = [self opibKernelMD5:[kernelPatchBundleDict objectForKey:@"Path"]];
 	
-	if([kernelMD5 isEqualToString:[[kernelCompatibleMD5s objectForKey:sharedData.systemVersion] objectAtIndex:0]]) {
+	if([kernelMD5 isEqualToString:[kernelCompatibleMD5s objectAtIndex:0]]) {
 		//PwnageTool
 		jbType = 1;
 		DLog(@"Device compatible: %@ on %@ jailbroken using pwnagetool.", sharedData.platform, sharedData.systemVersion);
-	} else if([kernelMD5 isEqualToString:[[kernelCompatibleMD5s objectForKey:sharedData.systemVersion] objectAtIndex:1]]) {
+	} else if([kernelMD5 isEqualToString:[kernelCompatibleMD5s objectAtIndex:1]]) {
 		//Redsn0w
 		jbType = 2;
 		DLog(@"Device compatible: %@ on %@ jailbroken using redsn0w.", sharedData.platform, sharedData.systemVersion);
-	} else if([sharedData.systemVersion isEqualToString:@"3.1.2"] && [kernelMD5 isEqualToString:[[kernelCompatibleMD5s objectForKey:sharedData.systemVersion] objectAtIndex:2]]) {
+	} else if([sharedData.systemVersion isEqualToString:@"3.1.2"] && [kernelMD5 isEqualToString:[kernelCompatibleMD5s objectAtIndex:2]]) {
 		//Blackra1n check
 		jbType = 3;
 		DLog(@"Device compatible: %@ on %@ jailbroken using blackra1n.", sharedData.platform, sharedData.systemVersion);
-	} else if([sharedData.systemVersion isEqualToString:@"4.1"] && [kernelMD5 isEqualToString:[[kernelCompatibleMD5s objectForKey:sharedData.systemVersion] objectAtIndex:2]]) {
+	} else if([sharedData.systemVersion isEqualToString:@"4.1"] && [kernelMD5 isEqualToString:[kernelCompatibleMD5s objectAtIndex:2]]) {
 		//Redsn0w check #2 as dev team decided to do a second lot of patches for 4.1 redsn0w.. wtf man? Turns out 0.9.6b2 is rather like pwnagetool, needs keys
 		jbType = 1;
 		DLog(@"Device compatible: %@ on %@ jailbroken using redsn0w 0.9.6b2+.", sharedData.platform, sharedData.systemVersion);
@@ -872,8 +935,7 @@ char endianness = 1;
 	DLog(@"Downloading stock kernelcache from Apple servers...");
 	sharedData.kernelPatchStage = 2;
 	
-	NSDictionary *ipswURLS = [platformDict objectForKey:@"IPSWURLs"];
-	NSString *ipsw = [ipswURLS objectForKey:sharedData.systemVersion];
+	NSString *ipsw = [kernelPatchBundleDict objectForKey:@"URL"];
 	sharedData.kernelCachePath = [kernelPatchBundleDict objectForKey:@"File"];
 	
 	ZipInfo* info = PartialZipInit([ipsw cStringUsingEncoding:NSUTF8StringEncoding]);
@@ -1024,69 +1086,6 @@ char endianness = 1;
 	[[NSFileManager defaultManager] removeItemAtPath:[sharedData.kernelCachePath stringByAppendingPathExtension:@"decrypted"] error:nil];
 	[[NSFileManager defaultManager] removeItemAtPath:[sharedData.kernelCachePath stringByAppendingPathExtension:@"decrypted.patched"] error:nil];
 	[[NSFileManager defaultManager] removeItemAtPath:[sharedData.kernelCachePath stringByAppendingPathExtension:@"encrypted"] error:nil];
-}
-
-- (int)opibGetFirmwareBundle {
-	commonData* sharedData = [commonData sharedData];
-	NSError *error;
-	int statusCode;
-	
-	NSString *bundleURL = [sharedData.opibUpdateCompatibleFirmware objectForKey:sharedData.systemVersion];
-	
-	DLog(@"Grabbing firmware bundle %@", bundleURL);
-	
-	NSDictionary *bundleInfo = [NSDictionary dictionaryWithContentsOfURL:[NSURL URLWithString:[bundleURL stringByAppendingPathComponent:@"Info.plist"]]];
-	if([bundleInfo count] < 1) {
-		return -1;
-	}
-	
-	NSDictionary *firmwarePatches = [bundleInfo objectForKey:@"FirmwarePatches"];
-	
-	LLBPatches = [firmwarePatches objectForKey:@"LLB"];
-	iBootPatches = [firmwarePatches objectForKey:@"iBoot"];
-		
-	//Get files
-	NSString *urlString = [NSString stringWithFormat:@"%@/%@", bundleURL, [LLBPatches objectForKey:@"Patch"]];
-	NSURL *URL = [NSURL URLWithString:urlString];
-	
-	ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:URL];
-	[request setDownloadDestinationPath:[sharedData.workingDirectory stringByAppendingPathComponent:[LLBPatches objectForKey:@"Patch"]]];
-	[request startSynchronous];
-	
-	error = [request error];
-	statusCode = [request responseStatusCode];
-	
-	if(statusCode >= 400) {
-		DLog(@"HTTP bad response: %d", statusCode);
-		return -2;
-	} else if(error) {
-		DLog(@"Grabbing LLB Patch failed. NSError: %@", [error localizedDescription]);
-		return -2;
-	}
-	
-	[self opibUpdateProgress:0.875];
-	
-	urlString = [NSString stringWithFormat:@"%@/%@", bundleURL, [iBootPatches objectForKey:@"Patch"]];
-	URL = [NSURL URLWithString:urlString];
-	
-	request = [ASIHTTPRequest requestWithURL:URL];
-	[request setDownloadDestinationPath:[sharedData.workingDirectory stringByAppendingPathComponent:[iBootPatches objectForKey:@"Patch"]]];
-	[request startSynchronous];
-	
-	error = [request error];
-	statusCode = [request responseStatusCode];
-	
-	if(statusCode >= 400) {
-		DLog(@"HTTP bad response: %d", statusCode);
-		return -3;
-	} else if(error) {
-		DLog(@"Grabbing LLB Patch failed. NSError: %@", [error localizedDescription]);
-		return -3;
-	}
-	
-	[self opibUpdateProgress:0.9375];
-	
-	return 0;
 }
 
 //QuickBoot stuffs

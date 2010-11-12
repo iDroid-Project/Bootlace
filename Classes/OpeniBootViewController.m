@@ -153,11 +153,11 @@
 	}
 	
 	//Ok that's good, now lets see if kernel matches our whitelist of MD5 hashes from various jailbreaks
-	NSString *kernelMD5 = [commonInstance fileMD5:[sharedData.opibUpdateKernelPaths objectForKey:sharedData.systemVersion]];
+	NSString *kernelMD5 = [opibInstance opibKernelMD5:sharedData.opibUpdateKernelPath];
 	
-	items = [[sharedData.opibUpdateVerifyMD5 objectForKey:sharedData.systemVersion] count];
+	items = [sharedData.opibUpdateVerifyMD5 count];
 	for(i=0; i<items; i++) {
-		if([kernelMD5 isEqualToString:[[sharedData.opibUpdateVerifyMD5 objectForKey:sharedData.systemVersion] objectAtIndex:i]]) {
+		if([kernelMD5 isEqualToString:[sharedData.opibUpdateVerifyMD5 objectAtIndex:i]]) {
 			break;
 		} else if(i==(items-1)) {
 			DLog(@"No MD5 matches found, aborting...");

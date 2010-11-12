@@ -374,6 +374,32 @@
 			D7073ACF128D82A000E7615B /* PBXTextBookmark */ = D7073ACF128D82A000E7615B /* PBXTextBookmark */;
 			D7073AD0128D82A000E7615B /* PBXTextBookmark */ = D7073AD0128D82A000E7615B /* PBXTextBookmark */;
 			D7073AD1128D82A000E7615B /* PBXTextBookmark */ = D7073AD1128D82A000E7615B /* PBXTextBookmark */;
+			D7073AD8128D904200E7615B /* XCBuildMessageTextBookmark */ = D7073AD8128D904200E7615B /* XCBuildMessageTextBookmark */;
+			D7073ADD128D90AF00E7615B /* XCBuildMessageTextBookmark */ = D7073ADD128D90AF00E7615B /* XCBuildMessageTextBookmark */;
+			D7073AE0128D92AE00E7615B /* PBXTextBookmark */ = D7073AE0128D92AE00E7615B /* PBXTextBookmark */;
+			D7073AE1128D92AE00E7615B /* PBXTextBookmark */ = D7073AE1128D92AE00E7615B /* PBXTextBookmark */;
+			D7073AE2128D92AE00E7615B /* PBXTextBookmark */ = D7073AE2128D92AE00E7615B /* PBXTextBookmark */;
+			D7073AE3128D92AE00E7615B /* PBXTextBookmark */ = D7073AE3128D92AE00E7615B /* PBXTextBookmark */;
+			D7073AE4128D92AE00E7615B /* PBXTextBookmark */ = D7073AE4128D92AE00E7615B /* PBXTextBookmark */;
+			D7073AE5128D92AE00E7615B /* PBXTextBookmark */ = D7073AE5128D92AE00E7615B /* PBXTextBookmark */;
+			D7073AE6128D92AE00E7615B /* PBXTextBookmark */ = D7073AE6128D92AE00E7615B /* PBXTextBookmark */;
+			D7073AE7128D92AE00E7615B /* PBXTextBookmark */ = D7073AE7128D92AE00E7615B /* PBXTextBookmark */;
+			D7073AE8128D92AE00E7615B /* PBXTextBookmark */ = D7073AE8128D92AE00E7615B /* PBXTextBookmark */;
+			D7073AE9128D92AE00E7615B /* PBXTextBookmark */ = D7073AE9128D92AE00E7615B /* PBXTextBookmark */;
+			D7073AEA128D92AE00E7615B /* PBXTextBookmark */ = D7073AEA128D92AE00E7615B /* PBXTextBookmark */;
+			D7073AEB128D92AE00E7615B /* PBXTextBookmark */ = D7073AEB128D92AE00E7615B /* PBXTextBookmark */;
+			D7073AEC128D92EB00E7615B /* PBXTextBookmark */ = D7073AEC128D92EB00E7615B /* PBXTextBookmark */;
+			D7073AED128D92EB00E7615B /* PBXTextBookmark */ = D7073AED128D92EB00E7615B /* PBXTextBookmark */;
+			D7073AEE128D92EB00E7615B /* PBXTextBookmark */ = D7073AEE128D92EB00E7615B /* PBXTextBookmark */;
+			D7073AEF128D92EB00E7615B /* PBXTextBookmark */ = D7073AEF128D92EB00E7615B /* PBXTextBookmark */;
+			D7073AF0128D92EB00E7615B /* PBXTextBookmark */ = D7073AF0128D92EB00E7615B /* PBXTextBookmark */;
+			D7073AF1128D92EB00E7615B /* PBXTextBookmark */ = D7073AF1128D92EB00E7615B /* PBXTextBookmark */;
+			D7073AF2128D92EB00E7615B /* PBXTextBookmark */ = D7073AF2128D92EB00E7615B /* PBXTextBookmark */;
+			D7073AF3128D92EB00E7615B /* PBXTextBookmark */ = D7073AF3128D92EB00E7615B /* PBXTextBookmark */;
+			D7073AF4128D92EB00E7615B /* PBXTextBookmark */ = D7073AF4128D92EB00E7615B /* PBXTextBookmark */;
+			D7073AF5128D92EB00E7615B /* PBXTextBookmark */ = D7073AF5128D92EB00E7615B /* PBXTextBookmark */;
+			D7073AF6128D92EB00E7615B /* PBXTextBookmark */ = D7073AF6128D92EB00E7615B /* PBXTextBookmark */;
+			D7073AF7128D92EB00E7615B /* PBXTextBookmark */ = D7073AF7128D92EB00E7615B /* PBXTextBookmark */;
 			D7313FF8127DE506004D295E = D7313FF8127DE506004D295E /* PBXTextBookmark */;
 			D7314183127E0F89004D295E = D7314183127E0F89004D295E /* PBXTextBookmark */;
 			D7792A561283342D007F064C = D7792A561283342D007F064C /* PBXTextBookmark */;
@@ -416,7 +442,7 @@
 		fRef = D7313FBA127DE421004D295E /* OpeniBootClass.m */;
 		name = "OpeniBootClass.m: 871";
 		rLen = 0;
-		rLoc = 27909;
+		rLoc = 29544;
 		rType = 0;
 		vrLen = 2408;
 		vrLoc = 25653;
@@ -446,7 +472,7 @@
 		fRef = D7313FBE127DE421004D295E /* OpeniBootViewController.m */;
 		name = "OpeniBootViewController.m: 330";
 		rLen = 0;
-		rLoc = 12538;
+		rLoc = 12421;
 		rType = 0;
 		vrLen = 2286;
 		vrLoc = 11869;
@@ -510,7 +536,7 @@
 		fRef = D7313FBA127DE421004D295E /* OpeniBootClass.m */;
 		name = "OpeniBootClass.m: 789";
 		rLen = 0;
-		rLoc = 24129;
+		rLoc = 25990;
 		rType = 0;
 		vrLen = 1882;
 		vrLoc = 22509;
@@ -560,7 +586,7 @@
 		fRef = D7313FBE127DE421004D295E /* OpeniBootViewController.m */;
 		name = "OpeniBootViewController.m: 330";
 		rLen = 0;
-		rLoc = 12538;
+		rLoc = 12421;
 		rType = 0;
 		vrLen = 2286;
 		vrLoc = 11869;
@@ -610,7 +636,7 @@
 		fRef = D7313FBA127DE421004D295E /* OpeniBootClass.m */;
 		name = "OpeniBootClass.m: 789";
 		rLen = 0;
-		rLoc = 24126;
+		rLoc = 25987;
 		rType = 0;
 		vrLen = 1816;
 		vrLoc = 22509;
@@ -670,7 +696,7 @@
 		fRef = D7313FBE127DE421004D295E /* OpeniBootViewController.m */;
 		name = "OpeniBootViewController.m: 330";
 		rLen = 0;
-		rLoc = 12538;
+		rLoc = 12421;
 		rType = 0;
 		vrLen = 2286;
 		vrLoc = 11869;
@@ -710,7 +736,7 @@
 		fRef = D7313FBA127DE421004D295E /* OpeniBootClass.m */;
 		name = "OpeniBootClass.m: 799";
 		rLen = 0;
-		rLoc = 24112;
+		rLoc = 25973;
 		rType = 0;
 		vrLen = 1698;
 		vrLoc = 22509;
@@ -770,7 +796,7 @@
 		fRef = D7313FBE127DE421004D295E /* OpeniBootViewController.m */;
 		name = "OpeniBootViewController.m: 330";
 		rLen = 0;
-		rLoc = 12538;
+		rLoc = 12421;
 		rType = 0;
 		vrLen = 2286;
 		vrLoc = 11869;
@@ -824,7 +850,7 @@
 		fRef = D7313FBA127DE421004D295E /* OpeniBootClass.m */;
 		name = "OpeniBootClass.m: 786";
 		rLen = 0;
-		rLoc = 23681;
+		rLoc = 25542;
 		rType = 0;
 		vrLen = 1706;
 		vrLoc = 22509;
@@ -884,7 +910,7 @@
 		fRef = D7313FBE127DE421004D295E /* OpeniBootViewController.m */;
 		name = "OpeniBootViewController.m: 330";
 		rLen = 0;
-		rLoc = 12538;
+		rLoc = 12421;
 		rType = 0;
 		vrLen = 2286;
 		vrLoc = 11869;
@@ -934,7 +960,7 @@
 		fRef = D7313FBA127DE421004D295E /* OpeniBootClass.m */;
 		name = "OpeniBootClass.m: 786";
 		rLen = 0;
-		rLoc = 23681;
+		rLoc = 25542;
 		rType = 0;
 		vrLen = 1706;
 		vrLoc = 22509;
@@ -994,7 +1020,7 @@
 		fRef = D7313FBE127DE421004D295E /* OpeniBootViewController.m */;
 		name = "OpeniBootViewController.m: 330";
 		rLen = 0;
-		rLoc = 12538;
+		rLoc = 12421;
 		rType = 0;
 		vrLen = 2286;
 		vrLoc = 11869;
@@ -1044,7 +1070,7 @@
 		fRef = D7313FBA127DE421004D295E /* OpeniBootClass.m */;
 		name = "OpeniBootClass.m: 786";
 		rLen = 0;
-		rLoc = 23681;
+		rLoc = 25542;
 		rType = 0;
 		vrLen = 1706;
 		vrLoc = 22509;
@@ -1104,7 +1130,7 @@
 		fRef = D7313FBE127DE421004D295E /* OpeniBootViewController.m */;
 		name = "OpeniBootViewController.m: 330";
 		rLen = 0;
-		rLoc = 12538;
+		rLoc = 12421;
 		rType = 0;
 		vrLen = 2286;
 		vrLoc = 11869;
@@ -1154,7 +1180,7 @@
 		fRef = D7313FBA127DE421004D295E /* OpeniBootClass.m */;
 		name = "OpeniBootClass.m: 786";
 		rLen = 0;
-		rLoc = 23681;
+		rLoc = 25542;
 		rType = 0;
 		vrLen = 1706;
 		vrLoc = 22509;
@@ -1214,7 +1240,7 @@
 		fRef = D7313FBE127DE421004D295E /* OpeniBootViewController.m */;
 		name = "OpeniBootViewController.m: 330";
 		rLen = 0;
-		rLoc = 12538;
+		rLoc = 12421;
 		rType = 0;
 		vrLen = 2286;
 		vrLoc = 11869;
@@ -1273,7 +1299,7 @@
 		fRef = D7313FBA127DE421004D295E /* OpeniBootClass.m */;
 		name = "OpeniBootClass.m: 793";
 		rLen = 0;
-		rLoc = 23987;
+		rLoc = 25848;
 		rType = 0;
 		vrLen = 1717;
 		vrLoc = 22509;
@@ -1343,7 +1369,7 @@
 		fRef = D7313FBE127DE421004D295E /* OpeniBootViewController.m */;
 		name = "OpeniBootViewController.m: 330";
 		rLen = 0;
-		rLoc = 12538;
+		rLoc = 12421;
 		rType = 0;
 		vrLen = 2286;
 		vrLoc = 11869;
@@ -1383,7 +1409,7 @@
 		fRef = D7313FBA127DE421004D295E /* OpeniBootClass.m */;
 		name = "OpeniBootClass.m: 796";
 		rLen = 0;
-		rLoc = 23991;
+		rLoc = 25852;
 		rType = 0;
 		vrLen = 1698;
 		vrLoc = 22509;
@@ -1453,7 +1479,7 @@
 		fRef = D7313FBE127DE421004D295E /* OpeniBootViewController.m */;
 		name = "OpeniBootViewController.m: 330";
 		rLen = 0;
-		rLoc = 12538;
+		rLoc = 12421;
 		rType = 0;
 		vrLen = 2286;
 		vrLoc = 11869;
@@ -1493,7 +1519,7 @@
 		fRef = D7313FBA127DE421004D295E /* OpeniBootClass.m */;
 		name = "OpeniBootClass.m: 790";
 		rLen = 0;
-		rLoc = 23898;
+		rLoc = 25759;
 		rType = 0;
 		vrLen = 1698;
 		vrLoc = 22509;
@@ -1563,7 +1589,7 @@
 		fRef = D7313FBE127DE421004D295E /* OpeniBootViewController.m */;
 		name = "OpeniBootViewController.m: 330";
 		rLen = 0;
-		rLoc = 12538;
+		rLoc = 12421;
 		rType = 0;
 		vrLen = 2286;
 		vrLoc = 11869;
@@ -1603,7 +1629,7 @@
 		fRef = D7313FBA127DE421004D295E /* OpeniBootClass.m */;
 		name = "OpeniBootClass.m: 790";
 		rLen = 0;
-		rLoc = 23898;
+		rLoc = 25759;
 		rType = 0;
 		vrLen = 1698;
 		vrLoc = 22509;
@@ -1673,7 +1699,7 @@
 		fRef = D7313FBE127DE421004D295E /* OpeniBootViewController.m */;
 		name = "OpeniBootViewController.m: 330";
 		rLen = 0;
-		rLoc = 12538;
+		rLoc = 12421;
 		rType = 0;
 		vrLen = 2286;
 		vrLoc = 11869;
@@ -1713,7 +1739,7 @@
 		fRef = D7313FBA127DE421004D295E /* OpeniBootClass.m */;
 		name = "OpeniBootClass.m: 793";
 		rLen = 0;
-		rLoc = 23987;
+		rLoc = 25848;
 		rType = 0;
 		vrLen = 1698;
 		vrLoc = 22509;
@@ -1783,7 +1809,7 @@
 		fRef = D7313FBE127DE421004D295E /* OpeniBootViewController.m */;
 		name = "OpeniBootViewController.m: 330";
 		rLen = 0;
-		rLoc = 12538;
+		rLoc = 12421;
 		rType = 0;
 		vrLen = 2286;
 		vrLoc = 11869;
@@ -1823,7 +1849,7 @@
 		fRef = D7313FBA127DE421004D295E /* OpeniBootClass.m */;
 		name = "OpeniBootClass.m: 792";
 		rLen = 0;
-		rLoc = 23902;
+		rLoc = 25763;
 		rType = 0;
 		vrLen = 1769;
 		vrLoc = 22509;
@@ -1893,7 +1919,7 @@
 		fRef = D7313FBE127DE421004D295E /* OpeniBootViewController.m */;
 		name = "OpeniBootViewController.m: 330";
 		rLen = 0;
-		rLoc = 12538;
+		rLoc = 12421;
 		rType = 0;
 		vrLen = 2286;
 		vrLoc = 11869;
@@ -1933,7 +1959,7 @@
 		fRef = D7313FBA127DE421004D295E /* OpeniBootClass.m */;
 		name = "OpeniBootClass.m: 793";
 		rLen = 0;
-		rLoc = 23987;
+		rLoc = 25848;
 		rType = 0;
 		vrLen = 1724;
 		vrLoc = 22509;
@@ -2003,7 +2029,7 @@
 		fRef = D7313FBE127DE421004D295E /* OpeniBootViewController.m */;
 		name = "OpeniBootViewController.m: 330";
 		rLen = 0;
-		rLoc = 12538;
+		rLoc = 12421;
 		rType = 0;
 		vrLen = 2286;
 		vrLoc = 11869;
@@ -2043,7 +2069,7 @@
 		fRef = D7313FBA127DE421004D295E /* OpeniBootClass.m */;
 		name = "OpeniBootClass.m: 793";
 		rLen = 0;
-		rLoc = 23987;
+		rLoc = 25848;
 		rType = 0;
 		vrLen = 1724;
 		vrLoc = 22509;
@@ -2113,7 +2139,7 @@
 		fRef = D7313FBE127DE421004D295E /* OpeniBootViewController.m */;
 		name = "OpeniBootViewController.m: 330";
 		rLen = 0;
-		rLoc = 12538;
+		rLoc = 12421;
 		rType = 0;
 		vrLen = 2286;
 		vrLoc = 11869;
@@ -2153,7 +2179,7 @@
 		fRef = D7313FBA127DE421004D295E /* OpeniBootClass.m */;
 		name = "OpeniBootClass.m: 792";
 		rLen = 0;
-		rLoc = 23987;
+		rLoc = 25848;
 		rType = 0;
 		vrLen = 1422;
 		vrLoc = 23145;
@@ -2223,7 +2249,7 @@
 		fRef = D7313FBE127DE421004D295E /* OpeniBootViewController.m */;
 		name = "OpeniBootViewController.m: 330";
 		rLen = 0;
-		rLoc = 12538;
+		rLoc = 12421;
 		rType = 0;
 		vrLen = 2286;
 		vrLoc = 11869;
@@ -2263,7 +2289,7 @@
 		fRef = D7313FBA127DE421004D295E /* OpeniBootClass.m */;
 		name = "OpeniBootClass.m: 793";
 		rLen = 0;
-		rLoc = 23987;
+		rLoc = 25848;
 		rType = 0;
 		vrLen = 1468;
 		vrLoc = 23145;
@@ -2333,7 +2359,7 @@
 		fRef = D7313FBE127DE421004D295E /* OpeniBootViewController.m */;
 		name = "OpeniBootViewController.m: 330";
 		rLen = 0;
-		rLoc = 12538;
+		rLoc = 12421;
 		rType = 0;
 		vrLen = 2286;
 		vrLoc = 11869;
@@ -2373,7 +2399,7 @@
 		fRef = D7313FBA127DE421004D295E /* OpeniBootClass.m */;
 		name = "OpeniBootClass.m: 793";
 		rLen = 0;
-		rLoc = 23987;
+		rLoc = 25848;
 		rType = 0;
 		vrLen = 1422;
 		vrLoc = 23145;
@@ -2443,7 +2469,7 @@
 		fRef = D7313FBE127DE421004D295E /* OpeniBootViewController.m */;
 		name = "OpeniBootViewController.m: 330";
 		rLen = 0;
-		rLoc = 12538;
+		rLoc = 12421;
 		rType = 0;
 		vrLen = 2286;
 		vrLoc = 11869;
@@ -2483,7 +2509,7 @@
 		fRef = D7313FBA127DE421004D295E /* OpeniBootClass.m */;
 		name = "OpeniBootClass.m: 794";
 		rLen = 0;
-		rLoc = 23987;
+		rLoc = 25848;
 		rType = 0;
 		vrLen = 1397;
 		vrLoc = 23145;
@@ -2553,7 +2579,7 @@
 		fRef = D7313FBE127DE421004D295E /* OpeniBootViewController.m */;
 		name = "OpeniBootViewController.m: 330";
 		rLen = 0;
-		rLoc = 12538;
+		rLoc = 12421;
 		rType = 0;
 		vrLen = 2286;
 		vrLoc = 11869;
@@ -2593,7 +2619,7 @@
 		fRef = D7313FBA127DE421004D295E /* OpeniBootClass.m */;
 		name = "OpeniBootClass.m: 798";
 		rLen = 0;
-		rLoc = 24039;
+		rLoc = 25900;
 		rType = 0;
 		vrLen = 1582;
 		vrLoc = 23145;
@@ -2663,7 +2689,7 @@
 		fRef = D7313FBE127DE421004D295E /* OpeniBootViewController.m */;
 		name = "OpeniBootViewController.m: 330";
 		rLen = 0;
-		rLoc = 12538;
+		rLoc = 12421;
 		rType = 0;
 		vrLen = 2286;
 		vrLoc = 11869;
@@ -2722,7 +2748,7 @@
 		fRef = D7313FBA127DE421004D295E /* OpeniBootClass.m */;
 		name = "OpeniBootClass.m: 802";
 		rLen = 0;
-		rLoc = 24112;
+		rLoc = 25973;
 		rType = 0;
 		vrLen = 1480;
 		vrLoc = 23456;
@@ -2732,7 +2758,7 @@
 		fRef = D7313FBE127DE421004D295E /* OpeniBootViewController.m */;
 		name = "OpeniBootViewController.m: 330";
 		rLen = 0;
-		rLoc = 12538;
+		rLoc = 12421;
 		rType = 0;
 		vrLen = 2286;
 		vrLoc = 11869;
@@ -2822,7 +2848,7 @@
 		fRef = D7313FBA127DE421004D295E /* OpeniBootClass.m */;
 		name = "OpeniBootClass.m: 798";
 		rLen = 0;
-		rLoc = 24039;
+		rLoc = 25900;
 		rType = 0;
 		vrLen = 1543;
 		vrLoc = 23456;
@@ -2832,7 +2858,7 @@
 		fRef = D7313FBE127DE421004D295E /* OpeniBootViewController.m */;
 		name = "OpeniBootViewController.m: 331";
 		rLen = 0;
-		rLoc = 12564;
+		rLoc = 12447;
 		rType = 0;
 		vrLen = 2213;
 		vrLoc = 11545;
@@ -2932,7 +2958,7 @@
 		fRef = D7313FBA127DE421004D295E /* OpeniBootClass.m */;
 		name = "OpeniBootClass.m: 803";
 		rLen = 0;
-		rLoc = 24112;
+		rLoc = 25973;
 		rType = 0;
 		vrLen = 1507;
 		vrLoc = 23456;
@@ -2942,7 +2968,7 @@
 		fRef = D7313FBE127DE421004D295E /* OpeniBootViewController.m */;
 		name = "OpeniBootViewController.m: 331";
 		rLen = 0;
-		rLoc = 12564;
+		rLoc = 12447;
 		rType = 0;
 		vrLen = 2213;
 		vrLoc = 11545;
@@ -3042,7 +3068,7 @@
 		fRef = D7313FBA127DE421004D295E /* OpeniBootClass.m */;
 		name = "OpeniBootClass.m: 801";
 		rLen = 0;
-		rLoc = 24112;
+		rLoc = 25973;
 		rType = 0;
 		vrLen = 1543;
 		vrLoc = 23456;
@@ -3052,7 +3078,7 @@
 		fRef = D7313FBE127DE421004D295E /* OpeniBootViewController.m */;
 		name = "OpeniBootViewController.m: 331";
 		rLen = 0;
-		rLoc = 12564;
+		rLoc = 12447;
 		rType = 0;
 		vrLen = 2213;
 		vrLoc = 11545;
@@ -3152,7 +3178,7 @@
 		fRef = D7313FBA127DE421004D295E /* OpeniBootClass.m */;
 		name = "OpeniBootClass.m: 801";
 		rLen = 0;
-		rLoc = 24112;
+		rLoc = 25973;
 		rType = 0;
 		vrLen = 1543;
 		vrLoc = 23456;
@@ -3162,7 +3188,7 @@
 		fRef = D7313FBE127DE421004D295E /* OpeniBootViewController.m */;
 		name = "OpeniBootViewController.m: 331";
 		rLen = 0;
-		rLoc = 12564;
+		rLoc = 12447;
 		rType = 0;
 		vrLen = 2213;
 		vrLoc = 11545;
@@ -3266,7 +3292,7 @@
 		fRef = D7313FBA127DE421004D295E /* OpeniBootClass.m */;
 		name = "OpeniBootClass.m: 848";
 		rLen = 0;
-		rLoc = 25732;
+		rLoc = 27599;
 		rType = 0;
 		vrLen = 2855;
 		vrLoc = 24844;
@@ -3286,7 +3312,7 @@
 		fRef = D7313FBE127DE421004D295E /* OpeniBootViewController.m */;
 		name = "OpeniBootViewController.m: 466";
 		rLen = 0;
-		rLoc = 17377;
+		rLoc = 17260;
 		rType = 0;
 		vrLen = 2112;
 		vrLoc = 11927;
@@ -3371,6 +3397,264 @@
 		vrLen = 1822;
 		vrLoc = 3339;
 	};
+	D7073AD8128D904200E7615B /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Accessing unknown 'opibUpdateIPSWURLs' getter method";
+		fRef = D7313FBA127DE421004D295E /* OpeniBootClass.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 194;
+		rType = 1;
+	};
+	D7073ADD128D90AF00E7615B /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Comparison between pointer and integer";
+		fRef = D7313FBE127DE421004D295E /* OpeniBootViewController.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 371;
+		rType = 1;
+	};
+	D7073AE0128D92AE00E7615B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D7313FB0127DE421004D295E /* FirstLaunchViewController.m */;
+		name = "FirstLaunchViewController.m: 144";
+		rLen = 0;
+		rLoc = 5337;
+		rType = 0;
+		vrLen = 910;
+		vrLoc = 5008;
+	};
+	D7073AE1128D92AE00E7615B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D7313FBA127DE421004D295E /* OpeniBootClass.m */;
+		name = "OpeniBootClass.m: 938";
+		rLen = 0;
+		rLoc = 29061;
+		rType = 0;
+		vrLen = 2229;
+		vrLoc = 33026;
+	};
+	D7073AE2128D92AE00E7615B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D7313FBE127DE421004D295E /* OpeniBootViewController.m */;
+		name = "OpeniBootViewController.m: 370";
+		rLen = 3;
+		rLoc = 14063;
+		rType = 0;
+		vrLen = 2810;
+		vrLoc = 13063;
+	};
+	D7073AE3128D92AE00E7615B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D7313FB8127DE421004D295E /* nvramFunctions.m */;
+		name = "nvramFunctions.m: 89";
+		rLen = 0;
+		rLoc = 2668;
+		rType = 0;
+		vrLen = 1980;
+		vrLoc = 1764;
+	};
+	D7073AE4128D92AE00E7615B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D7313FB0127DE421004D295E /* FirstLaunchViewController.m */;
+		name = "FirstLaunchViewController.m: 140";
+		rLen = 0;
+		rLoc = 5060;
+		rType = 0;
+		vrLen = 2431;
+		vrLoc = 3431;
+	};
+	D7073AE5128D92AE00E7615B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D7313FA7127DE421004D295E /* commonFunctions.h */;
+		name = "commonFunctions.h: 47";
+		rLen = 0;
+		rLoc = 1076;
+		rType = 0;
+		vrLen = 1428;
+		vrLoc = 0;
+	};
+	D7073AE6128D92AE00E7615B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D7313FA8127DE421004D295E /* commonFunctions.m */;
+		name = "commonFunctions.m: 59";
+		rLen = 0;
+		rLoc = 1424;
+		rType = 0;
+		vrLen = 1856;
+		vrLoc = 1226;
+	};
+	D7073AE7128D92AE00E7615B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D7313F47127DE3D9004D295E /* main.m */;
+		name = "main.m: 10";
+		rLen = 0;
+		rLoc = 165;
+		rType = 0;
+		vrLen = 747;
+		vrLoc = 0;
+	};
+	D7073AE8128D92AE00E7615B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D7313FB9127DE421004D295E /* OpeniBootClass.h */;
+		name = "OpeniBootClass.h: 71";
+		rLen = 0;
+		rLoc = 2126;
+		rType = 0;
+		vrLen = 1862;
+		vrLoc = 560;
+	};
+	D7073AE9128D92AE00E7615B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* BootlaceAppDelegate.m */;
+		name = "BootlaceAppDelegate.m: 69";
+		rLen = 0;
+		rLoc = 2270;
+		rType = 0;
+		vrLen = 2030;
+		vrLoc = 0;
+	};
+	D7073AEA128D92AE00E7615B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D7313FB6127DE421004D295E /* installClass.m */;
+		name = "installClass.m: 1012";
+		rLen = 144;
+		rLoc = 33812;
+		rType = 0;
+		vrLen = 2832;
+		vrLoc = 32800;
+	};
+	D7073AEB128D92AE00E7615B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D7313FB4127DE421004D295E /* HomeViewController.m */;
+		name = "HomeViewController.m: 129";
+		rLen = 0;
+		rLoc = 3939;
+		rType = 0;
+		vrLen = 1822;
+		vrLoc = 3339;
+	};
+	D7073AEC128D92EB00E7615B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D7313FB0127DE421004D295E /* FirstLaunchViewController.m */;
+		name = "FirstLaunchViewController.m: 144";
+		rLen = 0;
+		rLoc = 5337;
+		rType = 0;
+		vrLen = 910;
+		vrLoc = 5008;
+	};
+	D7073AED128D92EB00E7615B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D7313FBA127DE421004D295E /* OpeniBootClass.m */;
+		name = "OpeniBootClass.m: 193";
+		rLen = 0;
+		rLoc = 5135;
+		rType = 0;
+		vrLen = 1892;
+		vrLoc = 4123;
+	};
+	D7073AEE128D92EB00E7615B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D7313FBE127DE421004D295E /* OpeniBootViewController.m */;
+		name = "OpeniBootViewController.m: 370";
+		rLen = 3;
+		rLoc = 14063;
+		rType = 0;
+		vrLen = 2810;
+		vrLoc = 13063;
+	};
+	D7073AEF128D92EB00E7615B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D7313FB8127DE421004D295E /* nvramFunctions.m */;
+		name = "nvramFunctions.m: 89";
+		rLen = 0;
+		rLoc = 2668;
+		rType = 0;
+		vrLen = 1980;
+		vrLoc = 1764;
+	};
+	D7073AF0128D92EB00E7615B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D7313FB0127DE421004D295E /* FirstLaunchViewController.m */;
+		name = "FirstLaunchViewController.m: 140";
+		rLen = 0;
+		rLoc = 5060;
+		rType = 0;
+		vrLen = 2431;
+		vrLoc = 3431;
+	};
+	D7073AF1128D92EB00E7615B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D7313FA7127DE421004D295E /* commonFunctions.h */;
+		name = "commonFunctions.h: 47";
+		rLen = 0;
+		rLoc = 1076;
+		rType = 0;
+		vrLen = 1428;
+		vrLoc = 0;
+	};
+	D7073AF2128D92EB00E7615B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D7313FA8127DE421004D295E /* commonFunctions.m */;
+		name = "commonFunctions.m: 59";
+		rLen = 0;
+		rLoc = 1424;
+		rType = 0;
+		vrLen = 1856;
+		vrLoc = 1226;
+	};
+	D7073AF3128D92EB00E7615B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D7313F47127DE3D9004D295E /* main.m */;
+		name = "main.m: 10";
+		rLen = 0;
+		rLoc = 165;
+		rType = 0;
+		vrLen = 747;
+		vrLoc = 0;
+	};
+	D7073AF4128D92EB00E7615B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D7313FB9127DE421004D295E /* OpeniBootClass.h */;
+		name = "OpeniBootClass.h: 71";
+		rLen = 0;
+		rLoc = 2126;
+		rType = 0;
+		vrLen = 1862;
+		vrLoc = 560;
+	};
+	D7073AF5128D92EB00E7615B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* BootlaceAppDelegate.m */;
+		name = "BootlaceAppDelegate.m: 69";
+		rLen = 0;
+		rLoc = 2270;
+		rType = 0;
+		vrLen = 2030;
+		vrLoc = 0;
+	};
+	D7073AF6128D92EB00E7615B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D7313FB6127DE421004D295E /* installClass.m */;
+		name = "installClass.m: 1012";
+		rLen = 144;
+		rLoc = 33812;
+		rType = 0;
+		vrLen = 2832;
+		vrLoc = 32800;
+	};
+	D7073AF7128D92EB00E7615B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D7313FB4127DE421004D295E /* HomeViewController.m */;
+		name = "HomeViewController.m: 129";
+		rLen = 0;
+		rLoc = 3939;
+		rType = 0;
+		vrLen = 1822;
+		vrLoc = 3339;
+	};
 	D7313F36127DE282004D295E /* Bootlace */ = {
 		isa = PBXExecutable;
 		activeArgIndices = (
@@ -3425,17 +3709,17 @@
 	};
 	D7313FA5127DE421004D295E /* commonData.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1273, 2678}}";
-			sepNavSelRange = "{4458, 0}";
-			sepNavVisRange = "{3693, 2932}";
-			sepNavWindowFrame = "{{210, 60}, {1332, 901}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1273, 3328}}";
+			sepNavSelRange = "{918, 0}";
+			sepNavVisRange = "{456, 1339}";
+			sepNavWindowFrame = "{{227, 84}, {1332, 901}}";
 		};
 	};
 	D7313FA6127DE421004D295E /* commonData.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {10638, 773}}";
-			sepNavSelRange = "{763, 0}";
-			sepNavVisRange = "{0, 1929}";
+			sepNavIntBoundsRect = "{{0, 0}, {10477, 429}}";
+			sepNavSelRange = "{186, 1496}";
+			sepNavVisRange = "{0, 1770}";
 			sepNavWindowFrame = "{{130, 17}, {1332, 901}}";
 		};
 	};
@@ -3535,17 +3819,17 @@
 	};
 	D7313FBA127DE421004D295E /* OpeniBootClass.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1273, 14833}}";
-			sepNavSelRange = "{25732, 0}";
-			sepNavVisRange = "{24844, 2855}";
+			sepNavIntBoundsRect = "{{0, 0}, {1916, 15431}}";
+			sepNavSelRange = "{5135, 0}";
+			sepNavVisRange = "{4123, 1892}";
 			sepNavWindowFrame = "{{15, 122}, {1332, 901}}";
 		};
 	};
 	D7313FBE127DE421004D295E /* OpeniBootViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1363, 6214}}";
-			sepNavSelRange = "{17377, 0}";
-			sepNavVisRange = "{11927, 2112}";
+			sepNavIntBoundsRect = "{{0, 0}, {1363, 5954}}";
+			sepNavSelRange = "{14063, 3}";
+			sepNavVisRange = "{13063, 2810}";
 			sepNavWindowFrame = "{{107, 38}, {1332, 901}}";
 		};
 	};
@@ -3605,7 +3889,7 @@
 		fRef = D7313FBA127DE421004D295E /* OpeniBootClass.m */;
 		name = "OpeniBootClass.m: 843";
 		rLen = 0;
-		rLoc = 26989;
+		rLoc = 28696;
 		rType = 0;
 		vrLen = 2716;
 		vrLoc = 24836;
@@ -3625,7 +3909,7 @@
 		fRef = D7313FBE127DE421004D295E /* OpeniBootViewController.m */;
 		name = "OpeniBootViewController.m: 330";
 		rLen = 0;
-		rLoc = 12538;
+		rLoc = 12421;
 		rType = 0;
 		vrLen = 2319;
 		vrLoc = 11869;
@@ -3695,7 +3979,7 @@
 		fRef = D7313FBA127DE421004D295E /* OpeniBootClass.m */;
 		name = "OpeniBootClass.m: 991";
 		rLen = 0;
-		rLoc = 32792;
+		rLoc = 34427;
 		rType = 0;
 		vrLen = 1247;
 		vrLoc = 24800;
@@ -3715,7 +3999,7 @@
 		fRef = D7313FBA127DE421004D295E /* OpeniBootClass.m */;
 		name = "OpeniBootClass.m: 871";
 		rLen = 0;
-		rLoc = 27909;
+		rLoc = 29544;
 		rType = 0;
 		vrLen = 2408;
 		vrLoc = 25653;
@@ -3745,7 +4029,7 @@
 		fRef = D7313FBE127DE421004D295E /* OpeniBootViewController.m */;
 		name = "OpeniBootViewController.m: 330";
 		rLen = 0;
-		rLoc = 12538;
+		rLoc = 12421;
 		rType = 0;
 		vrLen = 2286;
 		vrLoc = 11869;

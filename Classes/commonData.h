@@ -42,13 +42,12 @@
 	NSString *opibUpdateURL;
 	NSString *opibUpdateBootlaceRequired;
 	NSString *opibUpdateFirmwarePath;
+	NSString *opibUpdateIPSWURLs;
+	NSString *opibUpdateKernelPath;
 	NSDate *opibUpdateReleaseDate;
 	NSDictionary *opibUpdateCompatibleFirmware;
-	NSDictionary *opibUpdateIPSWURLs;
-	NSDictionary *opibUpdateKernelMD5;
-	NSDictionary *opibUpdateVerifyMD5;
+	NSArray *opibUpdateVerifyMD5;
 	NSArray *opibUpdateManifest;
-	NSDictionary *opibUpdateKernelPaths;
 	
 	
 	int kernelPatchStage;
@@ -145,13 +144,12 @@
 @property (nonatomic, retain) NSString *opibUpdateURL;
 @property (nonatomic, retain) NSString *opibUpdateBootlaceRequired;
 @property (nonatomic, retain) NSString *opibUpdateFirmwarePath;
+@property (nonatomic, retain) NSString *opibUpdateKernelPath;
+@property (nonatomic, retain) NSString *opibUpdateIPSWURL;
 @property (nonatomic, retain) NSDate *opibUpdateReleaseDate;
 @property (nonatomic, retain) NSDictionary *opibUpdateCompatibleFirmware;
-@property (nonatomic, retain) NSDictionary *opibUpdateIPSWURLs;
-@property (nonatomic, retain) NSDictionary *opibUpdateKernelMD5;
-@property (nonatomic, retain) NSDictionary *opibUpdateVerifyMD5;
+@property (nonatomic, retain) NSArray *opibUpdateVerifyMD5;
 @property (nonatomic, retain) NSArray *opibUpdateManifest;
-@property (nonatomic, retain) NSDictionary *opibUpdateKernelPaths;
 
 
 @property (nonatomic, assign) int kernelPatchStage;
