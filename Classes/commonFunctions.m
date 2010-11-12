@@ -51,6 +51,20 @@
 	return((float) stats.f_bsize * stats.f_bavail);
 }
 
+- (NSString *)dataMD5:(NSData *)data {
+    unsigned char result[CC_MD5_DIGEST_LENGTH];
+	
+    CC_MD5([data bytes], [data length], result);
+	
+    NSMutableString *hash = [NSMutableString string];
+	
+    for (int i = 0; i < CC_MD5_DIGEST_LENGTH; i++) {
+        [hash appendFormat:@"%02X", result[i]];
+    }
+	
+    return [hash lowercaseString];
+}
+
 - (NSString *)fileMD5:(NSString *)path {
 	installInstance = [[installClass alloc] init];
 	

@@ -783,6 +783,26 @@ char endianness = 1;
 
 //Kernelcache Patching stuffs
 
+- (NSString *)opibKernelMD5:(NSString *)path {
+	NSString *md5;
+	u_int32_t size;
+	
+	commonInstance = [[commonFunctions alloc] init];
+	
+	NSFileHandle *kHandle = [NSFileHandle fileHandleForReadingAtPath:path];
+	[kHandle seekToFileOffset:60];
+	
+	NSData *rawSize = [kHandle readDataOfLength:4];
+	[rawSize getBytes:&size length:4];
+	
+	NSData *kData = [kHandle readDataOfLength:size];	
+	md5 = [commonInstance dataMD5:kData];
+	
+	DLog(@"Kernel MD5: %@", md5);
+	
+	return md5;
+}
+
 - (void)opibPatchKernelCache {
 	int status, jbType;
 	unsigned char* data;

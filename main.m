@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Classes/OpeniBootClass.h"
 
 int main(int argc, char *argv[]) {
     NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
@@ -17,6 +18,11 @@ int main(int argc, char *argv[]) {
 		retVal = UIApplicationMain(argc, argv, nil, nil);
 	} else if(strcmp(argv[1], "--debug")==0) {
 		printf("Testing mode...\n");
+		
+		OpeniBootClass *opibInstance = [[OpeniBootClass alloc] init];
+		[opibInstance opibKernelMD5:@"/System/Library/Caches/com.apple.kernelcaches/kernelcache"];
+		
+		NSLog(@"Done.");
 	} else {
 		printf("Invalid argument. Terminating.\n");
 		retVal = -7;

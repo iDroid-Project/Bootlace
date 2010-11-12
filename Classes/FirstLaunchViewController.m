@@ -137,7 +137,7 @@
     [super viewDidLoad];
 	
 	commonData* sharedData = [commonData sharedData];
-	commonFunctions *commonInstance = [[commonFunctions alloc] init];
+	commonInstance = [[commonFunctions alloc] init];
 	
 	if(![sharedData.platform isEqualToString:@"iPhone1,1"] && ![sharedData.platform isEqualToString:@"iPhone1,2"] && ![sharedData.platform isEqualToString:@"iPod1,1"]) {
 		DLog(@"Failed platform check: %@", sharedData.platform);

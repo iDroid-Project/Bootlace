@@ -44,6 +44,7 @@
 - (BOOL)checkMains;
 - (void)toggleAirplaneMode;
 - (float)getFreeSpace;
+- (NSString *)dataMD5:(NSData *)data;
 - (NSString *)fileMD5:(NSString *)path;
 - (void)getPlatform;
 - (void)getSystemVersion;

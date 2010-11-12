@@ -68,6 +68,8 @@
 - (void)opibUpdateProgress:(float)subProgress;
 
 //KernelPAtch functions
+- (NSString *)opibKernelMD5:(NSString *)path;
+
 - (void)opibPatchKernelCache;
 - (void)opibKernelPatchCleanup;
 
