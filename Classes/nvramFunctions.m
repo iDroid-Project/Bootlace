@@ -82,6 +82,11 @@
 			NSMutableDictionary *nvramDict = (NSMutableDictionary *)service_properties;
 			
 			if(mode==0) {
+				//iPhoDroid fix
+				NSString *hideMenuVal = @"false";
+				NSData *rawHideMenu = [hideMenuVal dataUsingEncoding:NSUTF8StringEncoding];
+				[nvramDict setObject:rawHideMenu forKey:@"opib-hide-menu"];
+				
 				NSData *rawTimeout = [sharedData.opibTimeout dataUsingEncoding:NSUTF8StringEncoding];				//Convert utf8 into raw binary
 				NSData *rawDefaultOS = [sharedData.opibDefaultOS dataUsingEncoding:NSUTF8StringEncoding];
 				NSData *rawTempOS = [sharedData.opibTempOS dataUsingEncoding:NSUTF8StringEncoding];
