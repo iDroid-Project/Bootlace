@@ -19,6 +19,8 @@
 	opibInstall.enabled = NO;
 	opibVersionLabel.hidden = YES;
 	opibReleaseDateLabel.hidden = YES;
+	opibConfigure.enabled = NO;
+	opibConfigure.hidden = YES;
 	
 	cfuSpinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
 	[cfuSpinner setCenter:CGPointMake(160, 140)];
@@ -340,6 +342,8 @@
 		opibInstall.tintColor = [UIColor colorWithRed:0.556 green:0.000 blue:0.000 alpha:1.000];
 	} else {
 		opibInstall.tintColor = [UIColor colorWithRed:0 green:0.7 blue:0.1 alpha:1.000];
+		opibConfigure.enabled = NO;
+		opibConfigure.hidden = YES;
 	}
 	
 	switch (sharedData.opibCanBeInstalled) {
@@ -355,6 +359,7 @@
 			opibInstall.enabled = YES;
 			[opibInstall removeTarget:self action:@selector(opibInstallTap:) forControlEvents:UIControlEventTouchUpInside];
 			[opibInstall addTarget:self action:@selector(opibRemoveTap:) forControlEvents:UIControlEventTouchUpInside];
+			
 			break;
 		}
 		case 1:
