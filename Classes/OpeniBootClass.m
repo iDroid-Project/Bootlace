@@ -845,7 +845,7 @@ char endianness = 1;
 	
 	NSDictionary *kernelPatchBundleDict = [NSDictionary dictionaryWithContentsOfFile:[bundlePath stringByAppendingPathComponent:@"Info.plist"]];
 	
-	NSString *kernelMD5 = [commonInstance fileMD5:[kernelPatchBundleDict objectForKey:@"Path"]];
+	NSString *kernelMD5 = [self opibKernelMD5:[kernelPatchBundleDict objectForKey:@"Path"]];
 	
 	if([kernelMD5 isEqualToString:[[kernelCompatibleMD5s objectForKey:sharedData.systemVersion] objectAtIndex:0]]) {
 		//PwnageTool

@@ -14,5 +14,12 @@
 	<string>kernelcache.release.nor.patch</string>
 	<key>Path</key>
 	<string>/System/Library/Caches/com.apple.kernelcaches/kernelcache</string>
+	<key>KernelMD5</key>
+	<array>
+		<string>7d36f073526faba609cd8158709fa1bb</string>
+		<string>3926d243e86dada21a874740763d1bf3</string>
+	</array>
+	<key>URL</key>
+	<string>http://appldnld.apple.com.edgesuite.net/content.info.apple.com/iPhone4/061-7436.20100621.58Yt4/iPhone1,2_4.0_8A293_Restore.ipsw</string>
 </dict>
 </plist>

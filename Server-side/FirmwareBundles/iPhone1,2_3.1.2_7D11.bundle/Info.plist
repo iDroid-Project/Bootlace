@@ -23,7 +23,35 @@
 			<string>LLB.n82ap.RELEASE.patch</string>
 		</dict>
 	</dict>
+	<key>FirmwarePath</key>
+	<string>Firmware/all_flash/all_flash.n82ap.production</string>
+	<key>KernelPath</key>
+	<string>/System/Library/Caches/com.apple.kernelcaches/kernelcache.s5l8900x</string>
+	<key>Manifest</key>
+	<array>
+		<string>LLB.n82ap.RELEASE.img3</string>
+		<string>openiboot.img3</string>
+		<string>iBoot.n82ap.RELEASE.img3</string>
+		<string>DeviceTree.n82ap.img3</string>
+		<string>applelogo.s5l8900x.img3</string>
+		<string>recoverymode.s5l8900x.img3</string>
+		<string>batterylow0.s5l8900x.img3</string>
+		<string>batterylow1.s5l8900x.img3</string>
+		<string>glyphcharging.s5l8900x.img3</string>
+		<string>glyphplugin.s5l8900x.img3</string>
+		<string>batterycharging0.s5l8900x.img3</string>
+		<string>batterycharging1.s5l8900x.img3</string>
+		<string>batteryfull.s5l8900x.img3</string>
+	</array>
 	<key>Name</key>
 	<string>iPhone1,2_3.1.2_7D11</string>
+	<key>URL</key>
+	<string>http://appldnld.apple.com.edgesuite.net/content.info.apple.com/iPhone/061-7265.20091008.Xsd32/iPhone1,2_3.1.2_7D11_Restore.ipsw</string>
+	<key>VerifyMD5</key>
+	<array>
+		<string>817f4ca2b460e89afe6e3046f545b024</string>
+		<string>d67f528e52ad87c2518b01e7fdfc47b4</string>
+		<string>30efe5e59af24d7520406cd068b7d7a6</string>
+	</array>
 </dict>
 </plist>

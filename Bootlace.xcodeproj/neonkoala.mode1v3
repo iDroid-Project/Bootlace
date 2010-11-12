@@ -216,10 +216,50 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>D7073AB9128D7ED400E7615B</string>
+						<string>D7073AC5128D82A000E7615B</string>
 						<key>history</key>
 						<array>
 							<string>D7E96304128372DE000B0E3F</string>
+						</array>
+					</dict>
+					<key>SplitCount</key>
+					<string>1</string>
+				</dict>
+				<key>StatusBarVisibility</key>
+				<true/>
+			</dict>
+			<key>Geometry</key>
+			<dict>
+				<key>Frame</key>
+				<string>{{0, 20}, {1332, 804}}</string>
+				<key>PBXModuleWindowStatusBarHidden2</key>
+				<false/>
+				<key>RubberWindowFrame</key>
+				<string>15 178 1332 845 0 0 1680 1028 </string>
+			</dict>
+		</dict>
+		<dict>
+			<key>Content</key>
+			<dict>
+				<key>PBXProjectModuleGUID</key>
+				<string>D7073AC6128D82A000E7615B</string>
+				<key>PBXProjectModuleLabel</key>
+				<string>nvramFunctions.m</string>
+				<key>PBXSplitModuleInNavigatorKey</key>
+				<dict>
+					<key>Split0</key>
+					<dict>
+						<key>PBXProjectModuleGUID</key>
+						<string>D7073AC7128D82A000E7615B</string>
+						<key>PBXProjectModuleLabel</key>
+						<string>nvramFunctions.m</string>
+						<key>_historyCapacity</key>
+						<integer>0</integer>
+						<key>bookmark</key>
+						<string>D7073AC8128D82A000E7615B</string>
+						<key>history</key>
+						<array>
+							<string>D7073AC3128D7F5B00E7615B</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -256,7 +296,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>D7073ABA128D7ED400E7615B</string>
+						<string>D7073AC9128D82A000E7615B</string>
 						<key>history</key>
 						<array>
 							<string>D7E96307128372DE000B0E3F</string>
@@ -296,7 +336,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>D7073ABB128D7ED400E7615B</string>
+						<string>D7073ACA128D82A000E7615B</string>
 						<key>history</key>
 						<array>
 							<string>D7073A88128D7D6300E7615B</string>
@@ -336,7 +376,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>D7073ABC128D7ED400E7615B</string>
+						<string>D7073ACB128D82A000E7615B</string>
 						<key>history</key>
 						<array>
 							<string>D707399B128D694900E7615B</string>
@@ -376,7 +416,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>D7073ABD128D7ED400E7615B</string>
+						<string>D7073ACC128D82A000E7615B</string>
 						<key>history</key>
 						<array>
 							<string>D7E96305128372DE000B0E3F</string>
@@ -416,7 +456,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>D7073ABE128D7ED400E7615B</string>
+						<string>D7073ACD128D82A000E7615B</string>
 						<key>history</key>
 						<array>
 							<string>D70739BC128D721D00E7615B</string>
@@ -456,7 +496,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>D7073ABF128D7ED400E7615B</string>
+						<string>D7073ACE128D82A000E7615B</string>
 						<key>history</key>
 						<array>
 							<string>D7E96308128372DE000B0E3F</string>
@@ -496,7 +536,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>D7073AC0128D7ED400E7615B</string>
+						<string>D7073ACF128D82A000E7615B</string>
 						<key>history</key>
 						<array>
 							<string>D7E9630B128372DE000B0E3F</string>
@@ -536,7 +576,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>D7073AC1128D7ED400E7615B</string>
+						<string>D7073AD0128D82A000E7615B</string>
 						<key>history</key>
 						<array>
 							<string>D7E96306128372DE000B0E3F</string>
@@ -576,7 +616,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>D7073AC2128D7ED400E7615B</string>
+						<string>D7073AD1128D82A000E7615B</string>
 						<key>history</key>
 						<array>
 							<string>D7E9630A128372DE000B0E3F</string>
@@ -676,13 +716,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>37</integer>
+									<integer>46</integer>
 									<integer>6</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 165}, {186, 710}}</string>
+							<string>{{0, 451}, {186, 710}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -729,7 +769,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>D7073AB8128D7ED400E7615B</string>
+										<string>D7073AC4128D82A000E7615B</string>
 										<key>history</key>
 										<array>
 											<string>D7313FF8127DE506004D295E</string>
@@ -942,10 +982,11 @@
 		<string>D70739BE128D729D00E7615B</string>
 		<string>D7D682CF1280B70E00FC87D9</string>
 		<string>D707399E128D698600E7615B</string>
-		<string>/Users/neonkoala/Documents/Bootlace/Bootlace.xcodeproj</string>
 		<string>D7313F43127DE285004D295E</string>
 		<string>D7D682BA1280AFD000FC87D9</string>
 		<string>D7D682AA1280A7BC00FC87D9</string>
+		<string>/Users/neonkoala/Documents/Bootlace/Bootlace.xcodeproj</string>
+		<string>D7073AC6128D82A000E7615B</string>
 		<string>D708055C1283119600A4334B</string>
 	</array>
 	<key>WindowString</key>

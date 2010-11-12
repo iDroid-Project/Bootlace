@@ -14,5 +14,13 @@
 	<string>kernelcache.release.nor.patch</string>
 	<key>Path</key>
 	<string>/System/Library/Caches/com.apple.kernelcaches/kernelcache.s5l8900x</string>
+	<key>URL</key>
+	<string>http://appldnld.apple.com.edgesuite.net/content.info.apple.com/iPhone/061-7265.20091008.Xsd32/iPhone1,2_3.1.2_7D11_Restore.ipsw</string>
+	<key>KernelMD5</key>
+	<array>
+		<string>0b0b76bb29c8ad395bc8e4b03a2c1205</string>
+		<string>e9a78c8aedf5752c046b0b1c82228408</string>
+		<string>89b8e3a9d374a63e371483b45083acc7</string>
+	</array>
 </dict>
 </plist>
