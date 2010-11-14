@@ -907,7 +907,7 @@ char endianness = 1;
 		//Redsn0w
 		jbType = 2;
 		DLog(@"Device compatible: %@ on %@ jailbroken using redsn0w.", sharedData.platform, sharedData.systemVersion);
-	} else if([sharedData.systemVersion isEqualToString:@"3.1.2"] && [kernelMD5 isEqualToString:[kernelCompatibleMD5s objectAtIndex:2]]) {
+	} else if([sharedData.systemVersion isEqualToString:@"3.1.2"] && [[commonInstance fileMD5:[kernelPatchBundleDict objectForKey:@"Path"]] isEqualToString:[kernelCompatibleMD5s objectAtIndex:2]]) {
 		//Blackra1n check
 		jbType = 3;
 		DLog(@"Device compatible: %@ on %@ jailbroken using blackra1n.", sharedData.platform, sharedData.systemVersion);

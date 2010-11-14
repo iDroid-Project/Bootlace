@@ -735,7 +735,7 @@
 	
 	//Grab update plist	
 	if(sharedData.debugMode) {
-		updatePlistURL = [NSURL URLWithString:@"http://beta.neonkoala.co.uk/bootlaceupdate.plist"];
+		updatePlistURL = [NSURL URLWithString:[NSString stringWithFormat:@"http://beta.neonkoala.co.uk/%@/bootlaceupdate.plist", sharedData.bootlaceVersion]];
 	} else {
 		updatePlistURL = [NSURL URLWithString:@"http://bootlace.idroidproject.org/bootlaceupdate.plist"];
 	}
