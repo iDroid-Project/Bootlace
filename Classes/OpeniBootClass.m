@@ -45,15 +45,6 @@ char endianness = 1;
 		return;
 	}
 	
-	status = [self opibGetFirmwareBundle];
-	
-	if(status < 0) {
-		DLog(@"opibGetFirmwareBundle returned: %d", status);
-		sharedData.opibUpdateFail = 2;
-		[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
-		return;
-	}
-	
 	if([operation intValue] != 3) {
 		status = [self opibGetOpeniBoot];
 	
@@ -369,7 +360,7 @@ char endianness = 1;
 		DLog(@"Haha, thought you could trick me with an empty Manifest? Not this time bitch.");
 		return -1;
 	}
-	NSLog(@"CP: 1");
+	
 	k_result = IOMasterPort(MACH_PORT_NULL, &masterPort);
 	if (k_result) {
 		DLog(@"IOMasterPort failed: 0x%X\n", k_result);
@@ -686,7 +677,7 @@ char endianness = 1;
 	if(sharedData.debugMode) {
 		opibUpdatePlistURL = [NSURL URLWithString:@"http://beta.neonkoala.co.uk/openiboot.plist"];
 	} else {
-		opibUpdatePlistURL = [NSURL URLWithString:@"http://bootlace.idroidproject.org/2.1/openiboot.plist"];
+		opibUpdatePlistURL = [NSURL URLWithString:[NSString stringWithFormat:@"http://bootlace.idroidproject.org/%@/openiboot.plist", sharedData.bootlaceVersion]];
 	}
 	sharedData.opibDict = [NSMutableDictionary dictionaryWithContentsOfURL:opibUpdatePlistURL];
 	
@@ -892,9 +883,7 @@ char endianness = 1;
 		return;
 	}
 	
-	NSDictionary *kernelPatchBundles = [platformDict objectForKey:@"KernelPatches"];
-		
-	NSString *bundleName = [kernelPatchBundles objectForKey:sharedData.systemVersion];
+	NSString *bundleName = [platformDict objectForKey:sharedData.systemVersion];
 	
 	if([bundleName length] == 0) {
 		DLog(@"Firmware version %@ unsupported.", sharedData.systemVersion);
@@ -922,10 +911,6 @@ char endianness = 1;
 		//Blackra1n check
 		jbType = 3;
 		DLog(@"Device compatible: %@ on %@ jailbroken using blackra1n.", sharedData.platform, sharedData.systemVersion);
-	} else if([sharedData.systemVersion isEqualToString:@"4.1"] && [kernelMD5 isEqualToString:[kernelCompatibleMD5s objectAtIndex:2]]) {
-		//Redsn0w check #2 as dev team decided to do a second lot of patches for 4.1 redsn0w.. wtf man? Turns out 0.9.6b2 is rather like pwnagetool, needs keys
-		jbType = 1;
-		DLog(@"Device compatible: %@ on %@ jailbroken using redsn0w 0.9.6b2+.", sharedData.platform, sharedData.systemVersion);
 	} else {
 		DLog(@"No MD5 matches found, aborting...");
 		sharedData.kernelPatchFail = -3;

@@ -43,7 +43,7 @@
 	
 	//Setup variables
 	sharedData.warningLive = NO;
-	sharedData.bootlaceVersion = @"2.1";
+	sharedData.bootlaceVersion = @"2.1.1";
 	
 	//Check the platform and iOS version
 	[commonInstance getPlatform];

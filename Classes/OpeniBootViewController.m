@@ -152,8 +152,17 @@
 		return;
 	}
 	
+	//Get the firmware bundle now
+	if([opibInstance opibGetFirmwareBundle] < 0) {
+		DLog(@"opibGetFirmwareBundle failed.");
+		[commonInstance sendError:@"Operation failed.\nFirmware patch bundle could not be retrieved."];
+		return;
+	}
+	
 	//Ok that's good, now lets see if kernel matches our whitelist of MD5 hashes from various jailbreaks
 	NSString *kernelMD5 = [opibInstance opibKernelMD5:sharedData.opibUpdateKernelPath];
+	
+	DLog(@"MD5 of %@: %@", sharedData.opibUpdateKernelPath, kernelMD5);
 	
 	items = [sharedData.opibUpdateVerifyMD5 count];
 	for(i=0; i<items; i++) {
@@ -261,11 +270,6 @@
 			case 1:
 				DLog(@"Error triggered. Fail code: %d", sharedData.opibUpdateFail);
 				[commonInstance sendError:[NSString stringWithFormat:@"%@ failed.\nFirmware could not be retrieved from Apple.", failType]];
-				keepAlive = NO;
-				break;
-			case 2:
-				DLog(@"Error triggered. Fail code: %d", sharedData.opibUpdateFail);
-				[commonInstance sendError:[NSString stringWithFormat:@"%@ failed.\nFirmware patches could not be retrieved.", failType]];
 				keepAlive = NO;
 				break;
 			case 3:
