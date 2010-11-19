@@ -48,6 +48,5 @@
 - (int)cherryPickFiles:(NSArray *)fileList;
 - (int)runPostInstall:(NSString *)URL;
 - (int)dumpMultitouch;
-- (int)dumpWiFi;
 
 @end

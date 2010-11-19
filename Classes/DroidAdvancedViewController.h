@@ -16,7 +16,6 @@
 @class commonFunctions;
 @class installClass;
 @class extractionClass;
-@class getFile;
 
 @interface DroidAdvancedViewController : UIViewController <UIActionSheetDelegate> {
 	installClass *installInstance;
@@ -25,7 +24,6 @@
 	getFile *getFileInstance;
 	
 	UIGlassButton *multitouchInstall;
-	UIGlassButton *wifiInstall;
 	UIGlassButton *resetUserDataButton;
 }
 
@@ -34,14 +32,11 @@
 @property (nonatomic, retain) extractionClass *extractionInstance;
 
 @property (nonatomic, retain) IBOutlet UIGlassButton *multitouchInstall;
-@property (nonatomic, retain) IBOutlet UIGlassButton *wifiInstall;
 @property (nonatomic, retain) IBOutlet UIGlassButton *resetUserDataButton;
 
 - (IBAction)extractMultitouch:(id)sender;
-- (IBAction)downloadWifi:(id)sender;
 - (IBAction)resetUserData:(id)sender;
 - (void)dumpZephyr;
-- (void)getWifi;
 - (void)doReset;
 
 @end

@@ -46,11 +46,11 @@
 	<key>Name</key>
 	<string>iPod1,1_3.1.2_7D11</string>
 	<key>URL</key>
-	<string>http://pfd.apple.com/ProtectedAsset/iPodTouch/061-7479.20100202.Secrc/iPod1,1_3.1.3_7E18_Restore.ipsw?downloadKey=1289248804_7125008f74b37f53aa2b343a511788c9</string>
+	<string>http://bootlace.me/ipsw/ipod313.php</string>
 	<key>VerifyMD5</key>
 	<array>
-		<string>817f4ca2b460e89afe6e3046f545b024</string>
-		<string>d67f528e52ad87c2518b01e7fdfc47b4</string>
+		<string>e07dc4692fff99d0e69bbc9daa478cc3</string>
+		<string>bba4fcd6a16e0b7ebd73bff743aeedd1</string>
 		<string>30efe5e59af24d7520406cd068b7d7a6</string>
 	</array>
 </dict>

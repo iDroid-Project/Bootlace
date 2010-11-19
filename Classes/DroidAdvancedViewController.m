@@ -11,7 +11,7 @@
 
 @implementation DroidAdvancedViewController
 
-@synthesize commonInstance, installInstance, extractionInstance, multitouchInstall, wifiInstall, resetUserDataButton;
+@synthesize commonInstance, installInstance, extractionInstance, multitouchInstall, resetUserDataButton;
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -33,15 +33,11 @@
 	[multitouchInstall setTitle:@"Extract Multitouch Firmware" forState:UIControlStateNormal];
 	multitouchInstall.tintColor = [UIColor colorWithRed:0.9 green:0.9 blue:0.9 alpha:1.000];
 	
-	[wifiInstall setTitle:@"Download WiFi Firmware" forState:UIControlStateNormal];
-	wifiInstall.tintColor = [UIColor colorWithRed:0.9 green:0.9 blue:0.9 alpha:1.000];
-	
 	[resetUserDataButton setTitle:@"Reset iDroid User Data" forState:UIControlStateNormal];
 	resetUserDataButton.tintColor = [UIColor colorWithRed:0.556 green:0.000 blue:0.000 alpha:1.000];
 	
 	if(sharedData.updateDependencies == nil) {
 		multitouchInstall.enabled = NO;
-		wifiInstall.enabled = NO;
 	}
 }
 
@@ -51,14 +47,6 @@
 	confirmExtract.tag = 10;
 	[confirmExtract showInView:self.tabBarController.view];
 	[confirmExtract release];
-}
-
-- (IBAction)downloadWifi:(id)sender {
-	UIActionSheet *confirmWifi = [[UIActionSheet alloc] initWithTitle:@"Downloading wifi firmware will overwrite any existing firmware. Continue?" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:@"Download" otherButtonTitles:nil];
-	confirmWifi.actionSheetStyle = UIActionSheetStyleBlackOpaque;
-	confirmWifi.tag = 20;
-	[confirmWifi showInView:self.tabBarController.view];
-	[confirmWifi release];	
 }
 
 - (IBAction)resetUserData:(id)sender {
@@ -106,27 +94,6 @@
 			break;
 		case -3:
 			[commonInstance sendError:@"Zephyr1 extraction failed on zephyr_aspeed.bin"];
-			break;
-		default:
-			break;
-	}
-}
-
-- (void)getWifi {
-	commonData* sharedData = [commonData sharedData];
-	
-	commonInstance = [[commonFunctions alloc] init];
-	installInstance = [[installClass alloc] init];
-	
-	if(![[NSFileManager defaultManager] fileExistsAtPath:sharedData.updateFirmwarePath]) {
-		[[NSFileManager defaultManager] createDirectoryAtPath:sharedData.updateFirmwarePath withIntermediateDirectories:YES attributes:nil error:nil];
-	}
-	
-	int success = [installInstance dumpWiFi];
-	
-	switch (success) {
-		case 0:
-			[commonInstance sendSuccess:@"Successfully downloaded WiFi firmware files."];
 			break;
 		default:
 			break;
@@ -209,11 +176,6 @@
 		case 10:
 			if(buttonIndex == 0) {
 				[self performSelectorOnMainThread:@selector(dumpZephyr) withObject:nil waitUntilDone:NO];
-			}
-			break;
-		case 20:
-			if(buttonIndex == 0) {
-				[self performSelector:@selector(getWifi) withObject:nil];
 			}
 			break;
 		case 30:

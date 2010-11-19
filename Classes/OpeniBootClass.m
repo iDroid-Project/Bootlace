@@ -677,7 +677,7 @@ char endianness = 1;
 	if(sharedData.debugMode) {
 		opibUpdatePlistURL = [NSURL URLWithString:@"http://beta.neonkoala.co.uk/openiboot.plist"];
 	} else {
-		opibUpdatePlistURL = [NSURL URLWithString:[NSString stringWithFormat:@"http://bootlace.idroidproject.org/%@/openiboot.plist", sharedData.bootlaceVersion]];
+		opibUpdatePlistURL = [NSURL URLWithString:[NSString stringWithFormat:@"http://bootlace.me/%@/openiboot.plist", sharedData.bootlaceVersion]];
 	}
 	sharedData.opibDict = [NSMutableDictionary dictionaryWithContentsOfURL:opibUpdatePlistURL];
 	
