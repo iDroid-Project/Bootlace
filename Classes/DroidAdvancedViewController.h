@@ -16,6 +16,7 @@
 @class commonFunctions;
 @class installClass;
 @class extractionClass;
+@class getFile;
 
 @interface DroidAdvancedViewController : UIViewController <UIActionSheetDelegate> {
 	installClass *installInstance;

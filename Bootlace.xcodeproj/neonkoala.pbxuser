@@ -164,6 +164,16 @@
 			D702D61D1296E5EE003BC691 /* PBXTextBookmark */ = D702D61D1296E5EE003BC691 /* PBXTextBookmark */;
 			D702D61E1296E5EE003BC691 /* PBXTextBookmark */ = D702D61E1296E5EE003BC691 /* PBXTextBookmark */;
 			D702D61F1296E5EE003BC691 /* PBXTextBookmark */ = D702D61F1296E5EE003BC691 /* PBXTextBookmark */;
+			D702D6211296E7AE003BC691 /* PBXTextBookmark */ = D702D6211296E7AE003BC691 /* PBXTextBookmark */;
+			D702D6221296E7AE003BC691 /* PBXTextBookmark */ = D702D6221296E7AE003BC691 /* PBXTextBookmark */;
+			D702D6231296E7AE003BC691 /* PBXTextBookmark */ = D702D6231296E7AE003BC691 /* PBXTextBookmark */;
+			D702D6241296E7AE003BC691 /* PBXTextBookmark */ = D702D6241296E7AE003BC691 /* PBXTextBookmark */;
+			D702D6251296E7AE003BC691 /* PBXTextBookmark */ = D702D6251296E7AE003BC691 /* PBXTextBookmark */;
+			D702D6261296E7AE003BC691 /* PBXTextBookmark */ = D702D6261296E7AE003BC691 /* PBXTextBookmark */;
+			D702D6271296E7AE003BC691 /* PBXTextBookmark */ = D702D6271296E7AE003BC691 /* PBXTextBookmark */;
+			D702D6281296E7AE003BC691 /* PBXTextBookmark */ = D702D6281296E7AE003BC691 /* PBXTextBookmark */;
+			D702D6291296E7AE003BC691 /* PBXTextBookmark */ = D702D6291296E7AE003BC691 /* PBXTextBookmark */;
+			D702D62A1296E7AE003BC691 /* PBXTextBookmark */ = D702D62A1296E7AE003BC691 /* PBXTextBookmark */;
 			D70739ED128D743A00E7615B = D70739ED128D743A00E7615B /* PBXTextBookmark */;
 			D7313FF8127DE506004D295E = D7313FF8127DE506004D295E /* PBXTextBookmark */;
 			D7314183127E0F89004D295E = D7314183127E0F89004D295E /* PBXTextBookmark */;
@@ -470,7 +480,7 @@
 		fRef = D7313FA9127DE421004D295E /* DroidAdvancedViewController.h */;
 		name = "DroidAdvancedViewController.h: 39";
 		rLen = 0;
-		rLoc = 1107;
+		rLoc = 1123;
 		rType = 0;
 		vrLen = 1131;
 		vrLoc = 0;
@@ -599,7 +609,7 @@
 		fRef = D7313FA9127DE421004D295E /* DroidAdvancedViewController.h */;
 		name = "DroidAdvancedViewController.h: 39";
 		rLen = 0;
-		rLoc = 1107;
+		rLoc = 1123;
 		rType = 0;
 		vrLen = 1131;
 		vrLoc = 0;
@@ -700,7 +710,7 @@
 		fRef = D7313FA9127DE421004D295E /* DroidAdvancedViewController.h */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 23;
+		rLoc = 24;
 		rType = 1;
 	};
 	D702D5F51296E331003BC691 /* PBXTextBookmark */ = {
@@ -718,7 +728,7 @@
 		fRef = D7313FA9127DE421004D295E /* DroidAdvancedViewController.h */;
 		name = "DroidAdvancedViewController.h: 23";
 		rLen = 0;
-		rLoc = 589;
+		rLoc = 605;
 		rType = 0;
 		vrLen = 1104;
 		vrLoc = 0;
@@ -977,7 +987,7 @@
 		fRef = D7313FA9127DE421004D295E /* DroidAdvancedViewController.h */;
 		name = "DroidAdvancedViewController.h: 23";
 		rLen = 0;
-		rLoc = 550;
+		rLoc = 566;
 		rType = 0;
 		vrLen = 1131;
 		vrLoc = 0;
@@ -1043,6 +1053,106 @@
 		vrLoc = 1226;
 	};
 	D702D61F1296E5EE003BC691 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D7313FB9127DE421004D295E /* OpeniBootClass.h */;
+		name = "OpeniBootClass.h: 71";
+		rLen = 0;
+		rLoc = 2126;
+		rType = 0;
+		vrLen = 1897;
+		vrLoc = 524;
+	};
+	D702D6211296E7AE003BC691 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D7313FAA127DE421004D295E /* DroidAdvancedViewController.m */;
+		name = "DroidAdvancedViewController.m: 40";
+		rLen = 0;
+		rLoc = 1384;
+		rType = 0;
+		vrLen = 746;
+		vrLoc = 1116;
+	};
+	D702D6221296E7AE003BC691 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D7313FA9127DE421004D295E /* DroidAdvancedViewController.h */;
+		name = "DroidAdvancedViewController.h: 19";
+		rLen = 0;
+		rLoc = 389;
+		rType = 0;
+		vrLen = 1147;
+		vrLoc = 0;
+	};
+	D702D6231296E7AE003BC691 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D7313FBE127DE421004D295E /* OpeniBootViewController.m */;
+		name = "OpeniBootViewController.m: 149";
+		rLen = 0;
+		rLoc = 6008;
+		rType = 0;
+		vrLen = 2484;
+		vrLoc = 5082;
+	};
+	D702D6241296E7AE003BC691 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D7313FAA127DE421004D295E /* DroidAdvancedViewController.m */;
+		name = "DroidAdvancedViewController.m: 127";
+		rLen = 0;
+		rLoc = 5488;
+		rType = 0;
+		vrLen = 2153;
+		vrLoc = 4336;
+	};
+	D702D6251296E7AE003BC691 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D7313FB5127DE421004D295E /* installClass.h */;
+		name = "installClass.h: 50";
+		rLen = 0;
+		rLoc = 1334;
+		rType = 0;
+		vrLen = 1341;
+		vrLoc = 0;
+	};
+	D702D6261296E7AE003BC691 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D7313FB0127DE421004D295E /* FirstLaunchViewController.m */;
+		name = "FirstLaunchViewController.m: 34";
+		rLen = 0;
+		rLoc = 994;
+		rType = 0;
+		vrLen = 2158;
+		vrLoc = 154;
+	};
+	D702D6271296E7AE003BC691 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D7313FB8127DE421004D295E /* nvramFunctions.m */;
+		name = "nvramFunctions.m: 89";
+		rLen = 0;
+		rLoc = 2668;
+		rType = 0;
+		vrLen = 1980;
+		vrLoc = 1764;
+	};
+	D702D6281296E7AE003BC691 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D7313FA7127DE421004D295E /* commonFunctions.h */;
+		name = "commonFunctions.h: 47";
+		rLen = 0;
+		rLoc = 1076;
+		rType = 0;
+		vrLen = 1428;
+		vrLoc = 0;
+	};
+	D702D6291296E7AE003BC691 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D7313FA8127DE421004D295E /* commonFunctions.m */;
+		name = "commonFunctions.m: 59";
+		rLen = 0;
+		rLoc = 1424;
+		rType = 0;
+		vrLen = 1805;
+		vrLoc = 1226;
+	};
+	D702D62A1296E7AE003BC691 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = D7313FB9127DE421004D295E /* OpeniBootClass.h */;
 		name = "OpeniBootClass.h: 71";
@@ -1149,8 +1259,8 @@
 	D7313FA9127DE421004D295E /* DroidAdvancedViewController.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1273, 773}}";
-			sepNavSelRange = "{550, 0}";
-			sepNavVisRange = "{0, 1131}";
+			sepNavSelRange = "{389, 0}";
+			sepNavVisRange = "{0, 1147}";
 		};
 	};
 	D7313FAA127DE421004D295E /* DroidAdvancedViewController.m */ = {
@@ -1250,7 +1360,7 @@
 	D7313FBE127DE421004D295E /* OpeniBootViewController.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1797, 5850}}";
-			sepNavSelRange = "{6888, 0}";
+			sepNavSelRange = "{6008, 0}";
 			sepNavVisRange = "{5082, 2484}";
 			sepNavWindowFrame = "{{107, 38}, {1332, 901}}";
 		};

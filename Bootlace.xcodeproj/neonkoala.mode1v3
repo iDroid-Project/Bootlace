@@ -202,46 +202,6 @@
 			<key>Content</key>
 			<dict>
 				<key>PBXProjectModuleGUID</key>
-				<string>D7D682AA1280A7BC00FC87D9</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>OpeniBootViewController.m</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>D7D682AB1280A7BC00FC87D9</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>OpeniBootViewController.m</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>D702D6171296E5EE003BC691</string>
-						<key>history</key>
-						<array>
-							<string>D73F0D021290773A00494C8C</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {1332, 804}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>107 94 1332 845 0 0 1680 1028 </string>
-			</dict>
-		</dict>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
 				<string>D702D5CB1296DA46003BC691</string>
 				<key>PBXProjectModuleLabel</key>
 				<string>DroidAdvancedViewController.h</string>
@@ -256,7 +216,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>D702D6181296E5EE003BC691</string>
+						<string>D702D6221296E7AE003BC691</string>
 						<key>history</key>
 						<array>
 							<string>D702D5EE1296E323003BC691</string>
@@ -282,6 +242,46 @@
 			<key>Content</key>
 			<dict>
 				<key>PBXProjectModuleGUID</key>
+				<string>D7D682AA1280A7BC00FC87D9</string>
+				<key>PBXProjectModuleLabel</key>
+				<string>OpeniBootViewController.m</string>
+				<key>PBXSplitModuleInNavigatorKey</key>
+				<dict>
+					<key>Split0</key>
+					<dict>
+						<key>PBXProjectModuleGUID</key>
+						<string>D7D682AB1280A7BC00FC87D9</string>
+						<key>PBXProjectModuleLabel</key>
+						<string>OpeniBootViewController.m</string>
+						<key>_historyCapacity</key>
+						<integer>0</integer>
+						<key>bookmark</key>
+						<string>D702D6231296E7AE003BC691</string>
+						<key>history</key>
+						<array>
+							<string>D73F0D021290773A00494C8C</string>
+						</array>
+					</dict>
+					<key>SplitCount</key>
+					<string>1</string>
+				</dict>
+				<key>StatusBarVisibility</key>
+				<true/>
+			</dict>
+			<key>Geometry</key>
+			<dict>
+				<key>Frame</key>
+				<string>{{0, 20}, {1332, 804}}</string>
+				<key>PBXModuleWindowStatusBarHidden2</key>
+				<false/>
+				<key>RubberWindowFrame</key>
+				<string>107 94 1332 845 0 0 1680 1028 </string>
+			</dict>
+		</dict>
+		<dict>
+			<key>Content</key>
+			<dict>
+				<key>PBXProjectModuleGUID</key>
 				<string>D702D5B01296D9C1003BC691</string>
 				<key>PBXProjectModuleLabel</key>
 				<string>DroidAdvancedViewController.m</string>
@@ -296,7 +296,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>D702D6191296E5EE003BC691</string>
+						<string>D702D6241296E7AE003BC691</string>
 						<key>history</key>
 						<array>
 							<string>D702D6031296E439003BC691</string>
@@ -336,7 +336,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>D702D61A1296E5EE003BC691</string>
+						<string>D702D6251296E7AE003BC691</string>
 						<key>history</key>
 						<array>
 							<string>D702D5A41296D96F003BC691</string>
@@ -376,7 +376,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>D702D61B1296E5EE003BC691</string>
+						<string>D702D6261296E7AE003BC691</string>
 						<key>history</key>
 						<array>
 							<string>D73F0D011290773A00494C8C</string>
@@ -416,7 +416,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>D702D61C1296E5EE003BC691</string>
+						<string>D702D6271296E7AE003BC691</string>
 						<key>history</key>
 						<array>
 							<string>D73F0D031290773A00494C8C</string>
@@ -456,7 +456,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>D702D61D1296E5EE003BC691</string>
+						<string>D702D6281296E7AE003BC691</string>
 						<key>history</key>
 						<array>
 							<string>D73F0D041290773A00494C8C</string>
@@ -496,7 +496,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>D702D61E1296E5EE003BC691</string>
+						<string>D702D6291296E7AE003BC691</string>
 						<key>history</key>
 						<array>
 							<string>D73F0D051290773A00494C8C</string>
@@ -536,7 +536,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>D702D61F1296E5EE003BC691</string>
+						<string>D702D62A1296E7AE003BC691</string>
 						<key>history</key>
 						<array>
 							<string>D73F0D061290773A00494C8C</string>
@@ -687,7 +687,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>D702D6161296E5EE003BC691</string>
+										<string>D702D6211296E7AE003BC691</string>
 										<key>history</key>
 										<array>
 											<string>D7313FF8127DE506004D295E</string>
@@ -899,7 +899,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>D702D6201296E5EE003BC691</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>D7314079127DE989004D295E</string>
 		<string>D7D682CF1280B70E00FC87D9</string>
@@ -909,9 +908,9 @@
 		<string>D702D5B31296D9C1003BC691</string>
 		<string>D702D5B01296D9C1003BC691</string>
 		<string>D7313F43127DE285004D295E</string>
-		<string>D702D5CB1296DA46003BC691</string>
-		<string>D7D682AA1280A7BC00FC87D9</string>
 		<string>/Users/neonkoala/Documents/Bootlace/Bootlace.xcodeproj</string>
+		<string>D7D682AA1280A7BC00FC87D9</string>
+		<string>D702D5CB1296DA46003BC691</string>
 	</array>
 	<key>WindowString</key>
 	<string>237 134 1292 769 0 0 1680 1028 </string>
