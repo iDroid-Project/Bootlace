@@ -130,7 +130,9 @@
 	} else if([sharedData.platform isEqualToString:@"iPhone1,2"]) {
 		sharedData.deviceName = @"iPhone 3G";
 	} else if([sharedData.platform isEqualToString:@"iPod1,1"]) {
-		sharedData.deviceName = @"iPod 1G";
+		sharedData.deviceName = @"iPod Touch 1G";
+	} else if([sharedData.platform isEqualToString:@"iPod2,1"]) {
+		sharedData.deviceName = @"iPod Touch 2G";
 	} else {
 		sharedData.deviceName = @"Unknown";
 	}
