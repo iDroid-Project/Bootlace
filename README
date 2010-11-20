@@ -5,11 +5,11 @@ V2.1.1
 
 Credits: Neonkoala, Kevin Elliott, marky, poorlad, nickp666, CPICH, Bluerise, msftguy.
 
-Status: Testing
+Status: Release
 
 Requirements
 
-This app requires OpeniBoot 0.1.3
+This app requires OpeniBoot 0.1.3+
 
 Other requirements:
 * iOS 3.1.2 -> 4.1
@@ -19,10 +19,13 @@ Other requirements:
 
 To Compile
 
-Make sure libcurl files have been copied from device or /usr on OS X to SDK folder. Also include the sys/reboot.h in the ARM root.
+Make sure libcurl files have been copied from device or /usr on OS X to SDK folder. Also include the sys/reboot.h in the ARM root. Libraries must be built for ARM in XCode first too.
 
-  $ ./generate.sh
   $ make clean && make
+
+Make sure you have respiring:
+
+  $ make install_respring
 
 To Install To Device
 
