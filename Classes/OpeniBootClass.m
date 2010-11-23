@@ -150,6 +150,10 @@ char endianness = 1;
 	
 	[self opibUpdateProgress:0.666];
 	
+	if([operation intValue] == 2) {
+		[self opibCheckInstalled];
+	}
+	
 	[self opibCleanUp];
 	
 	[UIApplication sharedApplication].idleTimerDisabled = NO; //Re-enable autolock
@@ -1071,6 +1075,18 @@ char endianness = 1;
 	[[NSFileManager defaultManager] removeItemAtPath:[sharedData.kernelCachePath stringByAppendingPathExtension:@"decrypted"] error:nil];
 	[[NSFileManager defaultManager] removeItemAtPath:[sharedData.kernelCachePath stringByAppendingPathExtension:@"decrypted.patched"] error:nil];
 	[[NSFileManager defaultManager] removeItemAtPath:[sharedData.kernelCachePath stringByAppendingPathExtension:@"encrypted"] error:nil];
+}
+
+- (void)opibRestoreKernel {
+	if([[NSFileManager defaultManager] fileExistsAtPath:@"/System/Library/Caches/com.apple.kernelcaches/kernelcache.s5l8900x.backup"]) {
+		[[NSFileManager defaultManager] removeItemAtPath:@"/System/Library/Caches/com.apple.kernelcaches/kernelcache.s5l8900x" error:nil];
+		[[NSFileManager defaultManager] moveItemAtPath:@"/System/Library/Caches/com.apple.kernelcaches/kernelcache.s5l8900x.backup" toPath:@"/System/Library/Caches/com.apple.kernelcaches/kernelcache.s5l8900x" error:nil];
+	} else if([[NSFileManager defaultManager] fileExistsAtPath:@"/System/Library/Caches/com.apple.kernelcaches/kernelcache.backup"]) {
+		[[NSFileManager defaultManager] removeItemAtPath:@"/System/Library/Caches/com.apple.kernelcaches/kernelcache" error:nil];
+		[[NSFileManager defaultManager] moveItemAtPath:@"/System/Library/Caches/com.apple.kernelcaches/kernelcache.backup" toPath:@"/System/Library/Caches/com.apple.kernelcaches/kernelcache" error:nil];
+	}
+	
+	[[NSFileManager defaultManager] removeItemAtPath:@"/var/mobile/Library/Preferences/be.dawson.bootlace.plist" error:nil];
 }
 
 //QuickBoot stuffs

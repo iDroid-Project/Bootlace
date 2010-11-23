@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>File</key>
+	<string>kernelcache.release.n82</string>
+	<key>IV</key>
+	<string>63e4f6107e33379100b2f3e1cc0fdd94</string>
+	<key>Key</key>
+	<string>899504f05b254e543d98fcff61d1dc03</string>
+	<key>Patch</key>
+	<string>kernelcache.release.patch</string>
+	<key>NORPatch</key>
+	<string>kernelcache.release.nor.patch</string>
+	<key>Path</key>
+	<string>/System/Library/Caches/com.apple.kernelcaches/kernelcache</string>
+	<key>KernelMD5</key>
+	<array>
+		<string>xxx</string>
+		<string>xxx</string>
+	</array>
+	<key>URL</key>
+	<string>http://appldnld.apple.com/iPhone4/061-9853.20101122.Vfgt5/iPhone1,2_4.2.1_8C148_Restore.ipsw</string>
+</dict>
+</plist>

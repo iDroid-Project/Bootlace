@@ -320,11 +320,18 @@
 	[installView dismissWithClickedButtonIndex:0 animated:YES];
 	
 	[self opibRefreshTap:nil];
+	
+	if([operation intValue]==2) {
+		UIAlertView *restoreKernelPrompt;
+		restoreKernelPrompt = [[[UIAlertView alloc] initWithTitle:@"Restore Kernel" message:@"Would you like to restore the unpatched kernel too?" delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil] autorelease];
+		[restoreKernelPrompt setTag:3];
+		[restoreKernelPrompt show];
+	}
 }
 
 - (void)opibUpdateCheck {
 	commonData* sharedData = [commonData sharedData];
-	commonInstance = [[commonFunctions alloc] init];
+	opibInstance = [[OpeniBootClass alloc] init];
 	
 	[opibInstance opibCheckForUpdates];
 	
@@ -435,6 +442,12 @@
 	} else if([alertView tag] == 2) {
 		if(buttonIndex == 1) {
 			[self performSelectorOnMainThread:@selector(opibOperation:) withObject:[NSNumber numberWithInt:1] waitUntilDone:NO];
+		}
+	} else if([alertView tag] == 3) {
+		if(buttonIndex == 1) {
+			opibInstance = [[OpeniBootClass alloc] init];
+			
+			[opibInstance opibRestoreKernel];
 		}
 	}
 }
