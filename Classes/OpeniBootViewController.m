@@ -321,7 +321,7 @@
 	
 	[self opibRefreshTap:nil];
 	
-	if([operation intValue]==2) {
+	if([operation intValue]==3) {
 		UIAlertView *restoreKernelPrompt;
 		restoreKernelPrompt = [[[UIAlertView alloc] initWithTitle:@"Restore Kernel" message:@"Would you like to restore the unpatched kernel too?" delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil] autorelease];
 		[restoreKernelPrompt setTag:3];

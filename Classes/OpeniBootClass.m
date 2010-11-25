@@ -915,6 +915,10 @@ char endianness = 1;
 		//Blackra1n check
 		jbType = 3;
 		DLog(@"Device compatible: %@ on %@ jailbroken using blackra1n.", sharedData.platform, sharedData.systemVersion);
+	} else if([sharedData.systemVersion isEqualToString:@"4.1"] && [kernelMD5 isEqualToString:[kernelCompatibleMD5s objectAtIndex:2]]) {
+		//PwnageTool for new 4.1 check
+		jbType = 3;
+		DLog(@"Device compatible: %@ on %@ jailbroken using new PwnageTool.", sharedData.platform, sharedData.systemVersion);
 	} else {
 		DLog(@"No MD5 matches found, aborting...");
 		sharedData.kernelPatchFail = -3;
@@ -1086,7 +1090,8 @@ char endianness = 1;
 		[[NSFileManager defaultManager] moveItemAtPath:@"/System/Library/Caches/com.apple.kernelcaches/kernelcache.backup" toPath:@"/System/Library/Caches/com.apple.kernelcaches/kernelcache" error:nil];
 	}
 	
-	[[NSFileManager defaultManager] removeItemAtPath:@"/var/mobile/Library/Preferences/be.dawson.bootlace.plist" error:nil];
+	[[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"hasRunOnce"];
+	[[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 //QuickBoot stuffs
