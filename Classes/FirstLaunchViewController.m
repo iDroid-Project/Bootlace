@@ -3,7 +3,7 @@
 //  BootlaceV2
 //
 //  Created by Neonkoala on 29/10/2010.
-//  Copyright 2010 Neonkoala.co.uk. All rights reserved.
+//  Copyright 2010 Nick Dawson. All rights reserved.
 //
 
 #import "FirstLaunchViewController.h"
