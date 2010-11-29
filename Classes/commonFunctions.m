@@ -26,7 +26,7 @@
 - (void)toggleAirplaneMode {
 	commonData* sharedData = [commonData sharedData];
 	
-	if(![sharedData.systemVersion isEqualToString:@"3.1.3"] && ![sharedData.systemVersion isEqualToString:@"3.1.2"]) {
+	if([sharedData.systemVersion isEqualToString:@"4.0"] || [sharedData.systemVersion isEqualToString:@"4.1"]) {
 		void *libHandle = dlopen("/System/Library/Frameworks/CoreTelephony.framework/CoreTelephony", RTLD_LAZY);
 	    int (*AirplaneMode)() = dlsym(libHandle, "CTPowerGetAirplaneMode");
 		int (*enable)(int mode) = dlsym(libHandle, "CTPowerSetAirplaneMode");

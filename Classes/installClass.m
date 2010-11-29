@@ -147,7 +147,21 @@
 	count = [sharedData.updateDirectories count];
 	NSMutableArray *installedDirectories = [NSMutableArray arrayWithCapacity:count];
 	
-	installedDependencies = [NSMutableArray arrayWithCapacity:2];
+	if([sharedData.updateDependencies objectForKey:@"WiFi"]) {
+		NSDictionary *wifiDict = [sharedData.updateDependencies objectForKey:@"WiFi"];
+		count = [wifiDict count];
+		
+		installedDependencies = [NSMutableArray arrayWithCapacity:(count+2)];
+		
+		for (i=0; i<count; i++) {
+			NSString *key = [NSString stringWithFormat:@"%d", i];
+			NSArray *fileDetails = [wifiDict objectForKey:key];
+			
+			[installedDependencies addObject:[sharedData.updateFirmwarePath stringByAppendingPathComponent:[fileDetails objectAtIndex:0]]];
+		}
+	} else {
+		installedDependencies = [NSMutableArray arrayWithCapacity:2];
+	}
 	
 	if([[sharedData.updateDependencies objectForKey:@"Multitouch"] isEqual:@"Z2F52,1"] || [[sharedData.updateDependencies objectForKey:@"Multitouch"] isEqual:@"Z2F51,1"]) {
 		[installedDependencies addObject:[sharedData.updateFirmwarePath stringByAppendingPathComponent:@"zephyr2.bin"]];
@@ -387,7 +401,7 @@
 	//Check dependencies
 	//Special multitouch routine
 	
-	[self updateProgress:[NSNumber numberWithFloat:0.333] nextStage:NO];
+	[self updateProgress:[NSNumber numberWithFloat:0.25] nextStage:NO];
 	
 	//Check if exists
 	
@@ -406,7 +420,20 @@
 		}
 	}
 	
-	[self updateProgress:[NSNumber numberWithFloat:0.666] nextStage:NO];
+	[self updateProgress:[NSNumber numberWithFloat:0.5] nextStage:NO];
+	
+	if([sharedData.updateDependencies objectForKey:@"WiFi"]) {
+		success = [self dumpWiFi];
+		
+		if(success < 0) {
+			ALog(@"WiFi firmware retrieval returned: %d", success);
+			sharedData.updateFail = 6;
+			[self cleanUp];
+			return;
+		}
+	}
+	
+	[self updateProgress:[NSNumber numberWithFloat:0.75] nextStage:NO];
 	
 	//Clean up
 	[self cleanUp];
@@ -1017,6 +1044,41 @@
 				return -1;
 			}
 		}
+	}
+	
+	return 0;
+}
+
+- (int)dumpWiFi {
+	commonData* sharedData = [commonData sharedData];
+	NSDictionary *wifiDict = [sharedData.updateDependencies objectForKey:@"WiFi"];
+	int i;
+	int count = [wifiDict count];
+	
+	DLog(@"File items: %d", count);
+	
+	for (i=0; i<count; i++) {
+		NSString *key = [NSString stringWithFormat:@"%d", i];
+		NSArray *fileDetails = [wifiDict objectForKey:key];
+		
+		[UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+		//Download from URL
+		getFileInstance = [[getFile alloc] initWithUrl:[fileDetails objectAtIndex:1] directory:sharedData.updateFirmwarePath];
+		
+		// Start downloading the image with self as delegate receiver
+		[getFileInstance getFileDownload:self];
+		
+		BOOL keepAlive = YES;
+		
+		do {
+			CFRunLoopRunInMode(kCFRunLoopDefaultMode, 1.0, YES);
+			//Check NSURLConnection for activity
+			if (getFileInstance.getFileWorking == NO) {
+				keepAlive = NO;
+			}
+		} while (keepAlive);
+		
+		[UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 	}
 	
 	return 0;

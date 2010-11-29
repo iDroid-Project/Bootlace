@@ -16,8 +16,8 @@
 	<string>/System/Library/Caches/com.apple.kernelcaches/kernelcache</string>
 	<key>KernelMD5</key>
 	<array>
-		<string>xxx</string>
-		<string>xxx</string>
+		<string>b56a290175ac52500f64319e82f14ded</string>
+		<string>262a217834bf3e621d7d603d7d49dc47</string>
 	</array>
 	<key>URL</key>
 	<string>http://appldnld.apple.com/iPhone4/061-9853.20101122.Vfgt5/iPhone1,2_4.2.1_8C148_Restore.ipsw</string>

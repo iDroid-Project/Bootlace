@@ -903,26 +903,58 @@ char endianness = 1;
 	
 	NSString *kernelMD5 = [self opibKernelMD5:[kernelPatchBundleDict objectForKey:@"Path"]];
 	
-	if([kernelMD5 isEqualToString:[kernelCompatibleMD5s objectAtIndex:0]]) {
-		//PwnageTool
-		jbType = 1;
-		DLog(@"Device compatible: %@ on %@ jailbroken using pwnagetool.", sharedData.platform, sharedData.systemVersion);
-	} else if([kernelMD5 isEqualToString:[kernelCompatibleMD5s objectAtIndex:1]]) {
-		//Redsn0w
-		jbType = 2;
-		DLog(@"Device compatible: %@ on %@ jailbroken using redsn0w.", sharedData.platform, sharedData.systemVersion);
-	} else if([sharedData.systemVersion isEqualToString:@"3.1.2"] && [[commonInstance fileMD5:[kernelPatchBundleDict objectForKey:@"Path"]] isEqualToString:[kernelCompatibleMD5s objectAtIndex:2]]) {
-		//Blackra1n check
-		jbType = 3;
-		DLog(@"Device compatible: %@ on %@ jailbroken using blackra1n.", sharedData.platform, sharedData.systemVersion);
-	} else if([sharedData.systemVersion isEqualToString:@"4.1"] && [kernelMD5 isEqualToString:[kernelCompatibleMD5s objectAtIndex:2]]) {
-		//PwnageTool for new 4.1 check
-		jbType = 3;
-		DLog(@"Device compatible: %@ on %@ jailbroken using new PwnageTool.", sharedData.platform, sharedData.systemVersion);
+	if([sharedData.systemVersion isEqualToString:@"3.1.2"]) {
+		//3.1.2 Rules: 1 - Pwnagetool, 2 - Redsn0w, 3 - Blackra1n
+		
+		if([kernelMD5 isEqualToString:[kernelCompatibleMD5s objectAtIndex:0]]) {
+			//PwnageTool
+			jbType = 1;
+			DLog(@"Device compatible: %@ on %@ jailbroken using pwnagetool.", sharedData.platform, sharedData.systemVersion);
+		} else if([kernelMD5 isEqualToString:[kernelCompatibleMD5s objectAtIndex:1]]) {
+			//Redsn0w
+			jbType = 2;
+			DLog(@"Device compatible: %@ on %@ jailbroken using redsn0w.", sharedData.platform, sharedData.systemVersion);
+		} else if([sharedData.systemVersion isEqualToString:@"3.1.2"] && [[commonInstance fileMD5:[kernelPatchBundleDict objectForKey:@"Path"]] isEqualToString:[kernelCompatibleMD5s objectAtIndex:2]]) {
+			//Blackra1n check
+			jbType = 3;
+			DLog(@"Device compatible: %@ on %@ jailbroken using blackra1n.", sharedData.platform, sharedData.systemVersion);
+		} else {
+			DLog(@"No MD5 matches found, aborting...");
+			sharedData.kernelPatchFail = -3;
+			return;
+		}
+	} else if([sharedData.systemVersion compare:@"3.1.2" options:NSNumericSearch] == NSOrderedDescending && [sharedData.systemVersion compare:@"4.2.1" options:NSNumericSearch] == NSOrderedAscending) {
+		//3.1.3 to 4.1 Rules: 1 - PwnageTool, 2 - Redsn0w
+		
+		if([kernelMD5 isEqualToString:[kernelCompatibleMD5s objectAtIndex:0]]) {
+			//PwnageTool
+			jbType = 1;
+			DLog(@"Device compatible: %@ on %@ jailbroken using pwnagetool.", sharedData.platform, sharedData.systemVersion);
+		} else if([kernelMD5 isEqualToString:[kernelCompatibleMD5s objectAtIndex:1]]) {
+			//Redsn0w
+			jbType = 2;
+			DLog(@"Device compatible: %@ on %@ jailbroken using redsn0w.", sharedData.platform, sharedData.systemVersion);
+		} else {
+			DLog(@"No MD5 matches found, aborting...");
+			sharedData.kernelPatchFail = -3;
+			return;
+		}
 	} else {
-		DLog(@"No MD5 matches found, aborting...");
-		sharedData.kernelPatchFail = -3;
-		return;
+		//4.2.1+ Rules: 1 - PwangeTool, 2 - Redsn0w (Treat as PwnageTool)
+		
+		if([kernelMD5 isEqualToString:[kernelCompatibleMD5s objectAtIndex:0]]) {
+			//PwnageTool
+			jbType = 1;
+			DLog(@"Device compatible: %@ on %@ jailbroken using pwnagetool.", sharedData.platform, sharedData.systemVersion);
+		} else if([kernelMD5 isEqualToString:[kernelCompatibleMD5s objectAtIndex:1]]) {
+			//Redsn0w treated as PwangeTool
+			jbType = 1;
+			DLog(@"Device compatible: %@ on %@ jailbroken using redsn0w.", sharedData.platform, sharedData.systemVersion);
+		} else {
+			DLog(@"No MD5 matches found, aborting...");
+			sharedData.kernelPatchFail = -3;
+			return;
+		}
 	}
 	
 	DLog(@"Downloading stock kernelcache from Apple servers...");

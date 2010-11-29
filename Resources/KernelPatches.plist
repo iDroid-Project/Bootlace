@@ -23,6 +23,8 @@
 		<string>iPhone1,2_4.0_8A293.bundle</string>
 		<key>4.1</key>
 		<string>iPhone1,2_4.1_8B117.bundle</string>
+		<key>4.2.1</key>
+		<string>iPhone1,2_4.2.1_8C148.bundle</string>
 	</dict>
 	<key>iPod1,1</key>
 	<dict>
