@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FirmwarePatches</key>
+	<dict>
+		<key>iBoot</key>
+		<dict>
+			<key>File</key>
+			<string>iBoot.n82ap.RELEASE.img3</string>
+			<key>IV</key>
+			<string>79ec4fb2d57ea1896febf5244a39aed1</string>
+			<key>Key</key>
+			<string>2841457265327a4c4d0eebdbbd90c0de</string>
+			<key>Patch</key>
+			<string>iBoot.n82ap.RELEASE.patch</string>
+		</dict>
+		<key>LLB</key>
+		<dict>
+			<key>File</key>
+			<string>LLB.n82ap.RELEASE.img3</string>
+			<key>Patch</key>
+			<string>LLB.n82ap.RELEASE.patch</string>
+		</dict>
+	</dict>
+	<key>FirmwarePath</key>
+	<string>Firmware/all_flash/all_flash.n82ap.production</string>
+	<key>KernelPath</key>
+	<string>/System/Library/Caches/com.apple.kernelcaches/kernelcache</string>
+	<key>Manifest</key>
+	<array>
+		<string>LLB.n82ap.RELEASE.img3</string>
+		<string>openiboot.img3</string>
+		<string>iBoot.n82ap.RELEASE.img3</string>
+		<string>DeviceTree.n82ap.img3</string>
+		<string>applelogo.s5l8900x.img3</string>
+		<string>recoverymode.s5l8900x.img3</string>
+		<string>batterylow0.s5l8900x.img3</string>
+		<string>batterylow1.s5l8900x.img3</string>
+		<string>glyphcharging.s5l8900x.img3</string>
+		<string>glyphplugin.s5l8900x.img3</string>
+		<string>batterycharging0.s5l8900x.img3</string>
+		<string>batterycharging1.s5l8900x.img3</string>
+		<string>batteryfull.s5l8900x.img3</string>
+	</array>
+	<key>Name</key>
+	<string>iPhone1,2_4.2.1_8C148</string>
+	<key>URL</key>
+	<string>http://appldnld.apple.com/iPhone4/061-9853.20101122.Vfgt5/iPhone1,2_4.2.1_8C148_Restore.ipsw</string>
+	<key>VerifyMD5</key>
+	<array>
+		<string>3804b524ebb0212d7bff72e79a16e202</string>
+	</array>
+</dict>
+</plist>
