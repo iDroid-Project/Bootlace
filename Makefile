@@ -6,13 +6,13 @@ INSTALLFOLDER=$(PROJECTNAME).app
 
 IPHONE_IP=192.168.0.11
 
-SDKVER=3.1.2
-SDKROOT=/SDK/Platforms/iPhoneOS.platform
+SDKVER=4.2
+SDKROOT=/Developer/Platforms/iPhoneOS.platform
 SDK=$(SDKROOT)/Developer/SDKs/iPhoneOS$(SDKVER).sdk
-SDKSIM=/SDK/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneOS$(SDKVER).sdk
+SDKSIM=/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneOS$(SDKVER).sdk
 
-CC=/SDK/Platforms/iPhoneOS.platform/Developer/usr/bin/arm-apple-darwin9-gcc-4.2.1
-CPP=/SDK/Platforms/iPhoneOS.platform/Developer/usr/bin/arm-apple-darwin9-g++-4.2.1
+CC=/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/arm-apple-darwin10-gcc-4.2.1
+CPP=/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/arm-apple-darwin10-g++-4.2.1
 LD=$(CC)
 
 LDFLAGS += -framework CoreFoundation 

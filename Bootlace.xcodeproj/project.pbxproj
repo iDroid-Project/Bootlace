@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1D3623260D0F684500981E51 /* BootlaceAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* BootlaceAppDelegate.m */; };
-		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
-		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
-		288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765070DF74369002DB57D /* CoreGraphics.framework */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765070DF74369002DB57D /* CoreGraphics.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		D702D6351296E981003BC691 /* AdvancedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D702D62C1296E981003BC691 /* AdvancedViewController.xib */; };
 		D702D6361296E981003BC691 /* BootView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D702D62D1296E981003BC691 /* BootView.xib */; };
 		D702D6371296E981003BC691 /* DroidAdvancedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D702D62E1296E981003BC691 /* DroidAdvancedViewController.xib */; };
@@ -20,6 +20,7 @@
 		D702D63B1296E981003BC691 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D702D6321296E981003BC691 /* MainWindow.xib */; };
 		D702D63C1296E981003BC691 /* OpeniBootConfigureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D702D6331296E981003BC691 /* OpeniBootConfigureViewController.xib */; };
 		D702D63D1296E981003BC691 /* OpeniBootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D702D6341296E981003BC691 /* OpeniBootViewController.xib */; };
+		D70E507412A9BD2A00ED5CA1 /* libIOKit.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D73140C7127DFE04004D295E /* libIOKit.dylib */; settings = {ATTRIBUTES = (Required, ); }; };
 		D7313F48127DE3D9004D295E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7313F47127DE3D9004D295E /* main.m */; };
 		D7313F6A127DE403004D295E /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = D7313F4C127DE403004D295E /* about.html */; };
 		D7313F6B127DE403004D295E /* androidos.png in Resources */ = {isa = PBXBuildFile; fileRef = D7313F4D127DE403004D295E /* androidos.png */; };
@@ -69,16 +70,12 @@
 		D731404A127DE701004D295E /* partial.c in Sources */ = {isa = PBXBuildFile; fileRef = D7314049127DE701004D295E /* partial.c */; };
 		D731404D127DE70E004D295E /* partial.h in Headers */ = {isa = PBXBuildFile; fileRef = D731404C127DE70E004D295E /* partial.h */; };
 		D7314063127DE8BF004D295E /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = D7314062127DE8BF004D295E /* common.h */; };
-		D731409A127DEC0B004D295E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7314099127DEC0B004D295E /* MobileCoreServices.framework */; };
-		D73140BC127DFDBD004D295E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D73140BB127DFDBD004D295E /* SystemConfiguration.framework */; };
-		D73140C4127DFDF9004D295E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D73140C3127DFDF9004D295E /* CFNetwork.framework */; };
-		D73140C8127DFE04004D295E /* libIOKit.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D73140C7127DFE04004D295E /* libIOKit.dylib */; };
-		D73140CA127DFE0D004D295E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D73140C9127DFE0D004D295E /* libz.dylib */; };
-		D73140D5127DFEF1004D295E /* libbz2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D73140D4127DFEF1004D295E /* libbz2.dylib */; };
-		D73140EF127E00A3004D295E /* libpartialzip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7314046127DE6D4004D295E /* libpartialzip.a */; };
-		D73140F5127E00E1004D295E /* libcurl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D73140F4127E00E1004D295E /* libcurl.dylib */; };
-		D7314106127E023A004D295E /* libcurl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D73140F4127E00E1004D295E /* libcurl.dylib */; settings = {ATTRIBUTES = (Required, ); }; };
-		D7314126127E0377004D295E /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7314112127E029A004D295E /* CoreFoundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D731409A127DEC0B004D295E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7314099127DEC0B004D295E /* MobileCoreServices.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		D73140BC127DFDBD004D295E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D73140BB127DFDBD004D295E /* SystemConfiguration.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		D73140C4127DFDF9004D295E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D73140C3127DFDF9004D295E /* CFNetwork.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		D73140CA127DFE0D004D295E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D73140C9127DFE0D004D295E /* libz.dylib */; settings = {ATTRIBUTES = (Required, ); }; };
+		D73140D5127DFEF1004D295E /* libbz2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D73140D4127DFEF1004D295E /* libbz2.dylib */; settings = {ATTRIBUTES = (Required, ); }; };
+		D73140EF127E00A3004D295E /* libpartialzip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7314046127DE6D4004D295E /* libpartialzip.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		D7314162127E0D1A004D295E /* bzlib.c in Sources */ = {isa = PBXBuildFile; fileRef = D7314161127E0D1A004D295E /* bzlib.c */; };
 		D7314166127E0D25004D295E /* bzlib_private.h in Headers */ = {isa = PBXBuildFile; fileRef = D7314164127E0D25004D295E /* bzlib_private.h */; };
 		D7314167127E0D25004D295E /* bzlib.h in Headers */ = {isa = PBXBuildFile; fileRef = D7314165127E0D25004D295E /* bzlib.h */; };
@@ -87,6 +84,10 @@
 		D731417A127E0E6B004D295E /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = D7314172127E0E6B004D295E /* ASIInputStream.m */; };
 		D731417B127E0E6B004D295E /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = D7314174127E0E6B004D295E /* ASINetworkQueue.m */; };
 		D731417C127E0E6B004D295E /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D7314177127E0E6B004D295E /* Reachability.m */; };
+		D736F14212A9C74F00D49936 /* libcurl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D736F14112A9C74F00D49936 /* libcurl.dylib */; };
+		D7F541F812A9A7C6007E2DE4 /* OSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F541F612A9A7C6007E2DE4 /* OSViewController.m */; };
+		D7F541FE12A9A8D9007E2DE4 /* OSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7F541FD12A9A8D9007E2DE4 /* OSViewController.xib */; };
+		D7FF6B9412A9C489006644E8 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7314112127E029A004D295E /* CoreFoundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -180,7 +181,6 @@
 		D73140C7127DFE04004D295E /* libIOKit.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libIOKit.dylib; path = usr/lib/libIOKit.dylib; sourceTree = SDKROOT; };
 		D73140C9127DFE0D004D295E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		D73140D4127DFEF1004D295E /* libbz2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.dylib; path = usr/lib/libbz2.dylib; sourceTree = SDKROOT; };
-		D73140F4127E00E1004D295E /* libcurl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcurl.dylib; path = usr/lib/libcurl.dylib; sourceTree = SDKROOT; };
 		D7314112127E029A004D295E /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		D731415E127E0CEC004D295E /* libbz2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libbz2.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7314161127E0D1A004D295E /* bzlib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = bzlib.c; path = BZip2/bzlib.c; sourceTree = "<group>"; };
@@ -200,6 +200,11 @@
 		D7314175127E0E6B004D295E /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
 		D7314176127E0E6B004D295E /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		D7314177127E0E6B004D295E /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		D736F14112A9C74F00D49936 /* libcurl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcurl.dylib; path = usr/lib/libcurl.dylib; sourceTree = SDKROOT; };
+		D7F541F512A9A7C6007E2DE4 /* OSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSViewController.h; sourceTree = "<group>"; };
+		D7F541F612A9A7C6007E2DE4 /* OSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSViewController.m; sourceTree = "<group>"; };
+		D7F541FD12A9A8D9007E2DE4 /* OSViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = OSViewController.xib; path = Views/OSViewController.xib; sourceTree = "<group>"; };
+		D7FF6B3B12A9C1E3006644E8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,12 +218,12 @@
 				D731409A127DEC0B004D295E /* MobileCoreServices.framework in Frameworks */,
 				D73140BC127DFDBD004D295E /* SystemConfiguration.framework in Frameworks */,
 				D73140C4127DFDF9004D295E /* CFNetwork.framework in Frameworks */,
-				D73140C8127DFE04004D295E /* libIOKit.dylib in Frameworks */,
 				D73140CA127DFE0D004D295E /* libz.dylib in Frameworks */,
 				D73140D5127DFEF1004D295E /* libbz2.dylib in Frameworks */,
 				D73140EF127E00A3004D295E /* libpartialzip.a in Frameworks */,
-				D7314106127E023A004D295E /* libcurl.dylib in Frameworks */,
-				D7314126127E0377004D295E /* CoreFoundation.framework in Frameworks */,
+				D70E507412A9BD2A00ED5CA1 /* libIOKit.dylib in Frameworks */,
+				D7FF6B9412A9C489006644E8 /* CoreFoundation.framework in Frameworks */,
+				D736F14212A9C74F00D49936 /* libcurl.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,7 +231,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D73140F5127E00E1004D295E /* libcurl.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +295,8 @@
 				D7313FBE127DE421004D295E /* OpeniBootViewController.m */,
 				1D3623240D0F684500981E51 /* BootlaceAppDelegate.h */,
 				1D3623250D0F684500981E51 /* BootlaceAppDelegate.m */,
+				D7F541F512A9A7C6007E2DE4 /* OSViewController.h */,
+				D7F541F612A9A7C6007E2DE4 /* OSViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -327,8 +333,9 @@
 				D73140C7127DFE04004D295E /* libIOKit.dylib */,
 				D73140C9127DFE0D004D295E /* libz.dylib */,
 				D73140D4127DFEF1004D295E /* libbz2.dylib */,
-				D73140F4127E00E1004D295E /* libcurl.dylib */,
 				D7314112127E029A004D295E /* CoreFoundation.framework */,
+				D7FF6B3B12A9C1E3006644E8 /* Security.framework */,
+				D736F14112A9C74F00D49936 /* libcurl.dylib */,
 			);
 			name = Bootlace;
 			sourceTree = "<group>";
@@ -354,6 +361,7 @@
 		D7313F49127DE3E2004D295E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D7F541FD12A9A8D9007E2DE4 /* OSViewController.xib */,
 				D702D62C1296E981003BC691 /* AdvancedViewController.xib */,
 				D702D62D1296E981003BC691 /* BootView.xib */,
 				D702D62E1296E981003BC691 /* DroidAdvancedViewController.xib */,
@@ -511,7 +519,14 @@
 			isa = PBXProject;
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Bootlace" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* Bootlace */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -566,6 +581,7 @@
 				D702D63B1296E981003BC691 /* MainWindow.xib in Resources */,
 				D702D63C1296E981003BC691 /* OpeniBootConfigureViewController.xib in Resources */,
 				D702D63D1296E981003BC691 /* OpeniBootViewController.xib in Resources */,
+				D7F541FE12A9A8D9007E2DE4 /* OSViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,6 +615,7 @@
 				D731417A127E0E6B004D295E /* ASIInputStream.m in Sources */,
 				D731417B127E0E6B004D295E /* ASINetworkQueue.m in Sources */,
 				D731417C127E0E6B004D295E /* Reachability.m in Sources */,
+				D7F541F812A9A7C6007E2DE4 /* OSViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,9 +648,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Bootlace_Prefix.pch;
 				INFOPLIST_FILE = "Bootlace-Info.plist";
-				LIBRARY_SEARCH_PATHS = Libraries/i386;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1.2;
+				LIBRARY_SEARCH_PATHS = (
+					Libraries/i386,
+					"\"$(SRCROOT)/build/Debug-iphonesimulator\"",
+				);
 				OTHER_LDFLAGS = (
-					"-lIOKit",
 					"-lz",
 					"-larchive",
 				);
@@ -649,9 +669,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Bootlace_Prefix.pch;
 				INFOPLIST_FILE = "Bootlace-Info.plist";
-				LIBRARY_SEARCH_PATHS = Libraries/i386;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1.2;
+				LIBRARY_SEARCH_PATHS = (
+					Libraries/i386,
+					"\"$(SRCROOT)/build/Debug-iphonesimulator\"",
+				);
 				OTHER_LDFLAGS = (
-					"-lIOKit",
 					"-lz",
 					"-larchive",
 				);
@@ -672,10 +695,11 @@
 					PartialZip,
 					Headers,
 				);
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1.2;
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "-larchive";
 				PREBINDING = NO;
-				SDKROOT = iphoneos3.1.2;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -692,10 +716,11 @@
 					PartialZip,
 					Headers,
 				);
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1.2;
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "-larchive";
 				PREBINDING = NO;
-				SDKROOT = iphoneos3.1.2;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -709,7 +734,7 @@
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = partialzip;
-				SDKROOT = iphonesimulator3.1.2;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -723,7 +748,7 @@
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = partialzip;
-				SDKROOT = iphonesimulator3.1.2;
+				SDKROOT = iphoneos;
 				ZERO_LINK = NO;
 			};
 			name = Release;
