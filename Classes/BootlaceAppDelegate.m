@@ -67,12 +67,6 @@
     // Add the tab bar controller's current view as a subview of the window
     [window addSubview:tabBarController.view];
 	
-	//Simulator Override
-	//REMOVE ME
-	sharedData.firstLaunch = YES;
-	sharedData.secondLaunch = YES;
-	//NO SERIOUSLY
-	
 	if(!sharedData.firstLaunch) {
 		FirstLaunchViewController *fullscreenController = [[FirstLaunchViewController alloc] init];
 		[tabBarController presentModalViewController:fullscreenController animated:NO];

@@ -4,7 +4,7 @@ PROJECTNAME=Bootlace
 APPFOLDER=$(PROJECTNAME).app
 INSTALLFOLDER=$(PROJECTNAME).app
 
-IPHONE_IP=192.168.0.11
+IPHONE_IP=192.168.0.9
 
 SDKVER=4.2
 SDKROOT=/Developer/Platforms/iPhoneOS.platform
@@ -26,7 +26,7 @@ LDFLAGS += -framework MobileCoreServices
 //LDFLAGS += -framework GraphicsServices
 //LDFLAGS += -framework AddressBookUI
 //LDFLAGS += -framework AddressBook
-//LDFLAGS += -framework QuartzCore
+LDFLAGS += -framework QuartzCore
 //LDFLAGS += -framework CoreSurface
 //LDFLAGS += -framework CoreAudio
 //LDFLAGS += -framework Celestial

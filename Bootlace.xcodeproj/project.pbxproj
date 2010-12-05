@@ -85,9 +85,17 @@
 		D731417B127E0E6B004D295E /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = D7314174127E0E6B004D295E /* ASINetworkQueue.m */; };
 		D731417C127E0E6B004D295E /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D7314177127E0E6B004D295E /* Reachability.m */; };
 		D736F14212A9C74F00D49936 /* libcurl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D736F14112A9C74F00D49936 /* libcurl.dylib */; };
+		D7A59F1812AC3CA500A8539A /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A59F1612AC3CA500A8539A /* SettingsViewController.m */; };
+		D7A59F1B12AC3CD400A8539A /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7A59F1A12AC3CD400A8539A /* SettingsViewController.xib */; };
 		D7F541F812A9A7C6007E2DE4 /* OSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F541F612A9A7C6007E2DE4 /* OSViewController.m */; };
 		D7F541FE12A9A8D9007E2DE4 /* OSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7F541FD12A9A8D9007E2DE4 /* OSViewController.xib */; };
-		D7FF6B9412A9C489006644E8 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7314112127E029A004D295E /* CoreFoundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D7FF160A12ABFFF7006EFBF6 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7FF160912ABFFF7006EFBF6 /* OpenGLES.framework */; };
+		D7FF160E12AC002B006EFBF6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7FF160D12AC002B006EFBF6 /* QuartzCore.framework */; };
+		D7FF170F12AC136B006EFBF6 /* TKCoverflowCoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FF170C12AC136B006EFBF6 /* TKCoverflowCoverView.m */; };
+		D7FF171012AC136B006EFBF6 /* TKCoverflowView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FF170E12AC136B006EFBF6 /* TKCoverflowView.m */; };
+		D7FF172212AC148A006EFBF6 /* TKGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FF171F12AC148A006EFBF6 /* TKGlobal.m */; };
+		D7FF172312AC148A006EFBF6 /* UIImage+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FF172112AC148A006EFBF6 /* UIImage+TKCategory.m */; };
+		D7FF172812AC14A7006EFBF6 /* UIView+TKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FF172712AC14A7006EFBF6 /* UIView+TKCategory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -201,9 +209,24 @@
 		D7314176127E0E6B004D295E /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		D7314177127E0E6B004D295E /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		D736F14112A9C74F00D49936 /* libcurl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcurl.dylib; path = usr/lib/libcurl.dylib; sourceTree = SDKROOT; };
+		D7A59F1512AC3CA500A8539A /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		D7A59F1612AC3CA500A8539A /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		D7A59F1A12AC3CD400A8539A /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SettingsViewController.xib; path = Views/SettingsViewController.xib; sourceTree = "<group>"; };
 		D7F541F512A9A7C6007E2DE4 /* OSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSViewController.h; sourceTree = "<group>"; };
 		D7F541F612A9A7C6007E2DE4 /* OSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSViewController.m; sourceTree = "<group>"; };
 		D7F541FD12A9A8D9007E2DE4 /* OSViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = OSViewController.xib; path = Views/OSViewController.xib; sourceTree = "<group>"; };
+		D7FF160912ABFFF7006EFBF6 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		D7FF160D12AC002B006EFBF6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D7FF170B12AC136B006EFBF6 /* TKCoverflowCoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKCoverflowCoverView.h; sourceTree = "<group>"; };
+		D7FF170C12AC136B006EFBF6 /* TKCoverflowCoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKCoverflowCoverView.m; sourceTree = "<group>"; };
+		D7FF170D12AC136B006EFBF6 /* TKCoverflowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKCoverflowView.h; sourceTree = "<group>"; };
+		D7FF170E12AC136B006EFBF6 /* TKCoverflowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKCoverflowView.m; sourceTree = "<group>"; };
+		D7FF171E12AC148A006EFBF6 /* TKGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKGlobal.h; sourceTree = "<group>"; };
+		D7FF171F12AC148A006EFBF6 /* TKGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKGlobal.m; sourceTree = "<group>"; };
+		D7FF172012AC148A006EFBF6 /* UIImage+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TKCategory.h"; sourceTree = "<group>"; };
+		D7FF172112AC148A006EFBF6 /* UIImage+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TKCategory.m"; sourceTree = "<group>"; };
+		D7FF172612AC14A7006EFBF6 /* UIView+TKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TKCategory.h"; sourceTree = "<group>"; };
+		D7FF172712AC14A7006EFBF6 /* UIView+TKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TKCategory.m"; sourceTree = "<group>"; };
 		D7FF6B3B12A9C1E3006644E8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -222,8 +245,9 @@
 				D73140D5127DFEF1004D295E /* libbz2.dylib in Frameworks */,
 				D73140EF127E00A3004D295E /* libpartialzip.a in Frameworks */,
 				D70E507412A9BD2A00ED5CA1 /* libIOKit.dylib in Frameworks */,
-				D7FF6B9412A9C489006644E8 /* CoreFoundation.framework in Frameworks */,
 				D736F14212A9C74F00D49936 /* libcurl.dylib in Frameworks */,
+				D7FF160A12ABFFF7006EFBF6 /* OpenGLES.framework in Frameworks */,
+				D7FF160E12AC002B006EFBF6 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +271,16 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D7FF172612AC14A7006EFBF6 /* UIView+TKCategory.h */,
+				D7FF172712AC14A7006EFBF6 /* UIView+TKCategory.m */,
+				D7FF171E12AC148A006EFBF6 /* TKGlobal.h */,
+				D7FF171F12AC148A006EFBF6 /* TKGlobal.m */,
+				D7FF172012AC148A006EFBF6 /* UIImage+TKCategory.h */,
+				D7FF172112AC148A006EFBF6 /* UIImage+TKCategory.m */,
+				D7FF170B12AC136B006EFBF6 /* TKCoverflowCoverView.h */,
+				D7FF170C12AC136B006EFBF6 /* TKCoverflowCoverView.m */,
+				D7FF170D12AC136B006EFBF6 /* TKCoverflowView.h */,
+				D7FF170E12AC136B006EFBF6 /* TKCoverflowView.m */,
 				D731416A127E0E6B004D295E /* ASIAuthenticationDialog.h */,
 				D731416B127E0E6B004D295E /* ASIAuthenticationDialog.m */,
 				D731416C127E0E6B004D295E /* ASICacheDelegate.h */,
@@ -297,6 +331,8 @@
 				1D3623250D0F684500981E51 /* BootlaceAppDelegate.m */,
 				D7F541F512A9A7C6007E2DE4 /* OSViewController.h */,
 				D7F541F612A9A7C6007E2DE4 /* OSViewController.m */,
+				D7A59F1512AC3CA500A8539A /* SettingsViewController.h */,
+				D7A59F1612AC3CA500A8539A /* SettingsViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -336,6 +372,8 @@
 				D7314112127E029A004D295E /* CoreFoundation.framework */,
 				D7FF6B3B12A9C1E3006644E8 /* Security.framework */,
 				D736F14112A9C74F00D49936 /* libcurl.dylib */,
+				D7FF160912ABFFF7006EFBF6 /* OpenGLES.framework */,
+				D7FF160D12AC002B006EFBF6 /* QuartzCore.framework */,
 			);
 			name = Bootlace;
 			sourceTree = "<group>";
@@ -361,6 +399,7 @@
 		D7313F49127DE3E2004D295E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D7A59F1A12AC3CD400A8539A /* SettingsViewController.xib */,
 				D7F541FD12A9A8D9007E2DE4 /* OSViewController.xib */,
 				D702D62C1296E981003BC691 /* AdvancedViewController.xib */,
 				D702D62D1296E981003BC691 /* BootView.xib */,
@@ -582,6 +621,7 @@
 				D702D63C1296E981003BC691 /* OpeniBootConfigureViewController.xib in Resources */,
 				D702D63D1296E981003BC691 /* OpeniBootViewController.xib in Resources */,
 				D7F541FE12A9A8D9007E2DE4 /* OSViewController.xib in Resources */,
+				D7A59F1B12AC3CD400A8539A /* SettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,6 +656,12 @@
 				D731417B127E0E6B004D295E /* ASINetworkQueue.m in Sources */,
 				D731417C127E0E6B004D295E /* Reachability.m in Sources */,
 				D7F541F812A9A7C6007E2DE4 /* OSViewController.m in Sources */,
+				D7FF170F12AC136B006EFBF6 /* TKCoverflowCoverView.m in Sources */,
+				D7FF171012AC136B006EFBF6 /* TKCoverflowView.m in Sources */,
+				D7FF172212AC148A006EFBF6 /* TKGlobal.m in Sources */,
+				D7FF172312AC148A006EFBF6 /* UIImage+TKCategory.m in Sources */,
+				D7FF172812AC14A7006EFBF6 /* UIView+TKCategory.m in Sources */,
+				D7A59F1812AC3CA500A8539A /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
