@@ -981,7 +981,12 @@
 			NSArray *results = [dirContents filteredArrayUsingPredicate:predicate];
 			
 			stashPath = [stashPath stringByAppendingPathComponent:[results objectAtIndex:0]];
-			NSDictionary *mtprops = [NSDictionary dictionaryWithContentsOfFile:[stashPath stringByAppendingPathComponent:@"firmware/multitouch/iPhone.mtprops"]];
+			NSString *mtPath = [stashPath stringByAppendingPathComponent:@"firmware/multitouch/iPhone.mtprops"];
+			if(![[NSFileManager defaultManager] fileExistsAtPath:mtPath]) {
+				mtPath = [NSString stringWithFormat:@"/private/var/stash/%@/fimrware/multitouch/iPhone.mtprops", [results objectAtIndex:1]];
+			}
+			
+			NSDictionary *mtprops = [NSDictionary dictionaryWithContentsOfFile:mtPath];
 			
 			DLog(@"Stash path: %@", stashPath);
 			
@@ -1001,7 +1006,12 @@
 		NSArray *results = [dirContents filteredArrayUsingPredicate:predicate];
 		
 		stashPath = [stashPath stringByAppendingPathComponent:[results objectAtIndex:0]];
-		NSDictionary *mtprops = [NSDictionary dictionaryWithContentsOfFile:[stashPath stringByAppendingPathComponent:@"firmware/multitouch/iPhone.mtprops"]];
+		NSString *mtPath = [stashPath stringByAppendingPathComponent:@"firmware/multitouch/iPhone.mtprops"];
+		if(![[NSFileManager defaultManager] fileExistsAtPath:mtPath]) {
+			mtPath = [NSString stringWithFormat:@"/private/var/stash/%@/fimrware/multitouch/iPhone.mtprops", [results objectAtIndex:1]];
+		}
+		
+		NSDictionary *mtprops = [NSDictionary dictionaryWithContentsOfFile:mtPath];
 		
 		NSDictionary *z1dict = [mtprops objectForKey:@"Z1F50,1"];
 		
@@ -1035,7 +1045,12 @@
 			NSArray *results = [dirContents filteredArrayUsingPredicate:predicate];
 			
 			stashPath = [stashPath stringByAppendingPathComponent:[results objectAtIndex:0]];
-			NSDictionary *mtprops = [NSDictionary dictionaryWithContentsOfFile:[stashPath stringByAppendingPathComponent:@"firmware/multitouch/iPod.mtprops"]];
+			NSString *mtPath = [stashPath stringByAppendingPathComponent:@"firmware/multitouch/iPod.mtprops"];
+			if(![[NSFileManager defaultManager] fileExistsAtPath:mtPath]) {
+				mtPath = [NSString stringWithFormat:@"/private/var/stash/%@/fimrware/multitouch/iPod.mtprops", [results objectAtIndex:1]];
+			}
+			
+			NSDictionary *mtprops = [NSDictionary dictionaryWithContentsOfFile:mtPath];
 			
 			NSDictionary *z2dict = [mtprops objectForKey:@"Z2F51,1"];
 			NSData *z2bin = [z2dict objectForKey:@"Constructed Firmware"];
