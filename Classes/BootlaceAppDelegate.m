@@ -37,13 +37,16 @@
 	sharedData.secondLaunch = [[NSUserDefaults standardUserDefaults] boolForKey:@"hasRunTwice"];
 	sharedData.debugMode = [[NSUserDefaults standardUserDefaults] boolForKey:@"debugMode"];
 	
+	NSString *validKernelPath = [[NSUserDefaults standardUserDefaults] objectForKey:@"validKernelPath"];
+	NSString *validMD5 = [[NSUserDefaults standardUserDefaults] objectForKey:@"validMD5"];
+	
 	if(sharedData.debugMode) {
 		DLog(@"Running in debug mode, using alternative servers");
 	}
 	
 	//Setup variables
 	sharedData.warningLive = NO;
-	sharedData.bootlaceVersion = @"2.1.4";
+	sharedData.bootlaceVersion = @"2.1.5";
 	
 	//Check the platform and iOS version
 	[commonInstance getPlatform];
@@ -62,15 +65,23 @@
 	DLog(@"Version: %@", sharedData.systemVersion);
 	
 	[commonInstance release];
-	[opibInstance release];
-	
+		
     // Add the tab bar controller's current view as a subview of the window
     [window addSubview:tabBarController.view];
 	
 	if(!sharedData.firstLaunch) {
 		FirstLaunchViewController *fullscreenController = [[FirstLaunchViewController alloc] init];
 		[tabBarController presentModalViewController:fullscreenController animated:NO];
+	} else if([validKernelPath length] > 0) {
+		if(![validMD5 isEqualToString:[opibInstance opibKernelMD5:validKernelPath]]) {
+			DLog(@"Failed MD5 check. Repatching kernel...");
+			
+			FirstLaunchViewController *fullscreenController = [[FirstLaunchViewController alloc] init];
+			[tabBarController presentModalViewController:fullscreenController animated:NO];
+		}				 
 	}
+	
+	[opibInstance release];
 }
 
 

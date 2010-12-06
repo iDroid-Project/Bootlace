@@ -1100,6 +1100,10 @@ char endianness = 1;
 	
 	[UIApplication sharedApplication].idleTimerDisabled = NO; //Re-enable autolock
 	
+	[[NSUserDefaults standardUserDefaults] setObject:[kernelPatchBundleDict objectForKey:@"Path"] forKey:@"validKernelPath"];
+	[[NSUserDefaults standardUserDefaults] setObject:[self opibKernelMD5:[kernelPatchBundleDict objectForKey:@"Path"]] forKey:@"validMD5"];
+	[[NSUserDefaults standardUserDefaults] synchronize];
+	
 	sharedData.kernelPatchStage = 5;
 }
 

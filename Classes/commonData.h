@@ -42,7 +42,7 @@
 	NSString *opibUpdateURL;
 	NSString *opibUpdateBootlaceRequired;
 	NSString *opibUpdateFirmwarePath;
-	NSString *opibUpdateIPSWURLs;
+	NSString *opibUpdateIPSWURL;
 	NSString *opibUpdateKernelPath;
 	NSDate *opibUpdateReleaseDate;
 	NSDictionary *opibUpdateCompatibleFirmware;
