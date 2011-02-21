@@ -69,6 +69,16 @@
 		D7AE1A7C1312EE28006F8932 /* partial.c in Sources */ = {isa = PBXBuildFile; fileRef = D7AE1A7B1312EE28006F8932 /* partial.c */; };
 		D7AE1A811312EE3D006F8932 /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = D7AE1A7E1312EE3D006F8932 /* common.h */; };
 		D7AE1A821312EE3D006F8932 /* partial.h in Headers */ = {isa = PBXBuildFile; fileRef = D7AE1A801312EE3D006F8932 /* partial.h */; };
+		D7AE1AD81312F895006F8932 /* libbz2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7AE1A5C1312ED44006F8932 /* libbz2.a */; };
+		D7AE1AD91312F899006F8932 /* libpartialzip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7AE1A781312EDDA006F8932 /* libpartialzip.a */; };
+		D7AE1ADB1312F8A0006F8932 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7AE1ADA1312F8A0006F8932 /* CFNetwork.framework */; };
+		D7AE1AE71312F8CC006F8932 /* libIOKit.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7AE1AE61312F8CC006F8932 /* libIOKit.dylib */; };
+		D7AE1AED1312F939006F8932 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7AE1AEC1312F939006F8932 /* SystemConfiguration.framework */; };
+		D7AE1AEF1312F941006F8932 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7AE1AEE1312F941006F8932 /* MobileCoreServices.framework */; };
+		D7AE1AF51312F962006F8932 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7AE1AF41312F962006F8932 /* libz.dylib */; };
+		D7AE1AFD1312F997006F8932 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7AE1AFC1312F997006F8932 /* QuartzCore.framework */; };
+		D7AE1B111312FA4B006F8932 /* libarchive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7AE1B101312FA4B006F8932 /* libarchive.a */; };
+		D7AE1B271312FA8B006F8932 /* libcurl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7AE1B261312FA8B006F8932 /* libcurl.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -172,6 +182,16 @@
 		D7AE1A7B1312EE28006F8932 /* partial.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = partial.c; path = PartialZip/partial.c; sourceTree = "<group>"; };
 		D7AE1A7E1312EE3D006F8932 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = common.h; path = PartialZip/common.h; sourceTree = "<group>"; };
 		D7AE1A801312EE3D006F8932 /* partial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = partial.h; sourceTree = "<group>"; };
+		D7AE1ADA1312F8A0006F8932 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D7AE1AE61312F8CC006F8932 /* libIOKit.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libIOKit.dylib; path = usr/lib/libIOKit.dylib; sourceTree = SDKROOT; };
+		D7AE1AEC1312F939006F8932 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D7AE1AEE1312F941006F8932 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		D7AE1AF41312F962006F8932 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		D7AE1AFC1312F997006F8932 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D7AE1B0A1312FA1E006F8932 /* archive_entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = archive_entry.h; path = Headers/archive_entry.h; sourceTree = "<group>"; };
+		D7AE1B0B1312FA1E006F8932 /* archive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = archive.h; path = Headers/archive.h; sourceTree = "<group>"; };
+		D7AE1B101312FA4B006F8932 /* libarchive.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libarchive.a; path = Libraries/i386/libarchive.a; sourceTree = "<group>"; };
+		D7AE1B261312FA8B006F8932 /* libcurl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcurl.dylib; path = usr/lib/libcurl.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +202,16 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */,
+				D7AE1AD81312F895006F8932 /* libbz2.a in Frameworks */,
+				D7AE1AD91312F899006F8932 /* libpartialzip.a in Frameworks */,
+				D7AE1ADB1312F8A0006F8932 /* CFNetwork.framework in Frameworks */,
+				D7AE1AE71312F8CC006F8932 /* libIOKit.dylib in Frameworks */,
+				D7AE1AED1312F939006F8932 /* SystemConfiguration.framework in Frameworks */,
+				D7AE1AEF1312F941006F8932 /* MobileCoreServices.framework in Frameworks */,
+				D7AE1AF51312F962006F8932 /* libz.dylib in Frameworks */,
+				D7AE1AFD1312F997006F8932 /* QuartzCore.framework in Frameworks */,
+				D7AE1B111312FA4B006F8932 /* libarchive.a in Frameworks */,
+				D7AE1B271312FA8B006F8932 /* libcurl.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,10 +317,19 @@
 				D7AE1A831312EE42006F8932 /* PartialZip */,
 				D7AE1A661312ED72006F8932 /* BZip2 */,
 				080E96DDFE201D6D7F000001 /* Classes */,
+				D7AE1B091312FA0B006F8932 /* Headers */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				D7AE1ADA1312F8A0006F8932 /* CFNetwork.framework */,
+				D7AE1AE61312F8CC006F8932 /* libIOKit.dylib */,
+				D7AE1B101312FA4B006F8932 /* libarchive.a */,
+				D7AE1AEC1312F939006F8932 /* SystemConfiguration.framework */,
+				D7AE1AEE1312F941006F8932 /* MobileCoreServices.framework */,
+				D7AE1AF41312F962006F8932 /* libz.dylib */,
+				D7AE1AFC1312F997006F8932 /* QuartzCore.framework */,
+				D7AE1B261312FA8B006F8932 /* libcurl.dylib */,
 			);
 			name = Bootlace;
 			sourceTree = "<group>";
@@ -372,6 +411,15 @@
 				D7AE1A7B1312EE28006F8932 /* partial.c */,
 			);
 			name = PartialZip;
+			sourceTree = "<group>";
+		};
+		D7AE1B091312FA0B006F8932 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				D7AE1B0A1312FA1E006F8932 /* archive_entry.h */,
+				D7AE1B0B1312FA1E006F8932 /* archive.h */,
+			);
+			name = Headers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -574,7 +622,16 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Bootlace_Prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					Headers,
+					PartialZip,
+					/usr/include/,
+				);
 				INFOPLIST_FILE = "Bootlace-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Libraries/i386\"",
+				);
 				PRODUCT_NAME = Bootlace;
 			};
 			name = Debug;
@@ -587,6 +644,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Bootlace_Prefix.pch;
 				INFOPLIST_FILE = "Bootlace-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Libraries/i386\"",
+				);
 				PRODUCT_NAME = Bootlace;
 				VALIDATE_PRODUCT = YES;
 			};
