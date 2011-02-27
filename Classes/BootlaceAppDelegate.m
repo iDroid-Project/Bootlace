@@ -46,7 +46,7 @@
 	
 	//Setup variables
 	sharedData.warningLive = NO;
-	sharedData.bootlaceVersion = @"2.1.5";
+	sharedData.bootlaceVersion = @"2.1.6";
 	
 	//Check the platform and iOS version
 	[commonInstance getPlatform];
@@ -62,7 +62,7 @@
 	DLog(@"==========================================");
 	DLog(@"console logfile = /var/tmp/Bootlace.log");
 	DLog(@"==========================================");
-	DLog(@"Version: %@", sharedData.systemVersion);
+	DLog(@"Version: %@", sharedData.bootlaceVersion);
 	
 	[commonInstance release];
 		

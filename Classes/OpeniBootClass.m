@@ -940,16 +940,20 @@ char endianness = 1;
 			return;
 		}
 	} else {
-		//4.2.1+ Rules: 1 - PwangeTool, 2 - Redsn0w (Treat as PwnageTool)
+		//4.2.1+ Rules: 1 - PwnageTool, 2 - Redsn0w (Treat as PwnageTool)
 		
 		if([kernelMD5 isEqualToString:[kernelCompatibleMD5s objectAtIndex:0]]) {
 			//PwnageTool
 			jbType = 1;
 			DLog(@"Device compatible: %@ on %@ jailbroken using pwnagetool.", sharedData.platform, sharedData.systemVersion);
 		} else if([kernelMD5 isEqualToString:[kernelCompatibleMD5s objectAtIndex:1]]) {
-			//Redsn0w treated as PwangeTool
+			//Redsn0w treated as PwnageTool
 			jbType = 1;
 			DLog(@"Device compatible: %@ on %@ jailbroken using redsn0w.", sharedData.platform, sharedData.systemVersion);
+		} else if([kernelMD5 isEqualToString:[kernelCompatibleMD5s objectAtIndex:2]]) {
+			//PwnageTool 4.2+ check
+			jbType = 1;
+			DLog(@"Device compatible: %@ on %@ jailbroken using PwnageTool 4.2+.", sharedData.platform, sharedData.systemVersion);
 		} else {
 			DLog(@"No MD5 matches found, aborting...");
 			sharedData.kernelPatchFail = -3;
